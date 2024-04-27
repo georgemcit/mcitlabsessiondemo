@@ -3,7 +3,6 @@ locals{
   forum="abracadabramcit"
   lengthsa=length(local.servicename)
   lengthforum=length(local.forum)
-firdtnam="george
 }
 output "print"{
     value = local.servicename
@@ -16,7 +15,4 @@ output "lengthsa"{
 }
 output "lengthforum"{
     value=local.lengthforum
-}
-output "firstprint"{
-    value=local.firstname
 }
