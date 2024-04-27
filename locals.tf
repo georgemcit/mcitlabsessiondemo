@@ -4,6 +4,7 @@ locals{
   lengthsa=length(local.servicename)
   lengthforum=length(local.forum)
   firstname="george"
+  city="montreal"
 }
 output "print"{
     value = local.servicename
@@ -19,4 +20,7 @@ output "lengthforum"{
 }
 output "thirdprint"{
     value=local.firstname
+}
+output "fourthprint"{
+    value=local.city
 }
