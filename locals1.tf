@@ -34,7 +34,7 @@ variable "years_of_work"{
 }
 variable "ifstillworking"{
  type=bool
- default="true"
+ default=true
 }
 output "company_name"{
  value=var.company_name
