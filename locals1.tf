@@ -42,6 +42,6 @@ output "company_name"{
 output "ifstillworking"{
  value=var.ifstillworking
 }
-output "years_of_worke"{
+output "years_of_work"{
  value=var.years_of_work
 }
