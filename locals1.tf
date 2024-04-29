@@ -30,7 +30,7 @@ variable "company_name"{
 }
 variable "years_of_work"{
  type=number
- default="2"
+ default=2
 }
 variable "ifstillworking"{
  type=bool
