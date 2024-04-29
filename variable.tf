@@ -44,18 +44,8 @@ variable "environment"{
  type=string
  default="staging"
 }
-variable "company_name"{
- type=string
- default="Ipex"
-}
-variable "years_of_work"{
- type=number
- default="2"
-}
-variable "ifstillworking"{
- type=bool
- default="true"
-}
+
+
 
 
 
