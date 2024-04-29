@@ -1,9 +1,9 @@
 locals{
   landmarks1="museum"
- landmarks2="Notre-Dame Basilica"
-landmarks3="Biodome"
-landmarks4="Habitat 67"
-landmarks5="Mount Royal Park"
+  landmarks2="Notre-Dame Basilica"
+  landmarks3="Biodome"
+  landmarks4="Habitat 67"
+  landmarks5="Mount Royal Park"
 }
 output "print1"{
     value = local.landmarks1
