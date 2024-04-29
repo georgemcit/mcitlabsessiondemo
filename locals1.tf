@@ -36,12 +36,12 @@ variable "ifstillworking"{
  type=bool
  default="true"
 }
-outpute "company_name"{
+output "company_name"{
  value=var.company_name
 }
-outpute "ifstillworking"{
+output "ifstillworking"{
  value=var.ifstillworking
 }
-outpute "years_of_worke"{
+output "years_of_worke"{
  value=var.years_of_work
 }
