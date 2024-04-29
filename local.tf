@@ -2,6 +2,6 @@ locals{
   landmarks1="museum"
  
 }
-output "print"{
+output "print1"{
     value = local.landmarks1
 }
