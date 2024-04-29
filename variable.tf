@@ -48,23 +48,15 @@ variable "company_name"{
  type=string
  default="Ipex"
 }
-outpute "company_name"{
- value=var.company_name
-}
 variable "years_of_work"{
  type=number
  default="2"
-}
-outpute "years_of_worke"{
- value=var.years_of_work
 }
 variable "ifstillworking"{
  type=bool
  default="true"
 }
-outpute "ifstillworking"{
- value=var.ifstillworking
-}
+
 
 
 
