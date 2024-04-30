@@ -64,5 +64,5 @@ output "sumofthreenumbers"{
     value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
 }
 output "sumofsevennumbers"{
-    value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
+    value=sum([for numberoutput in local.total_output1: tonumber(numberoutput)])
 }
