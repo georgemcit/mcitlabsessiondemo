@@ -46,6 +46,6 @@ output "ifstillworking"{
 output "years_of_work"{
  value=var.years_of_work
 }
-output "winterlistSports"{
+output "wintersportslist"{
      value =[for sport in local.winterlistofSports:sport]
 
