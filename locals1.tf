@@ -63,6 +63,6 @@ output "restaurantsinmontreal"{
 output "sumofthreenumbers"{
     value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
 }
-output "sumofsevennumbers"{
+output "sumofthreenumbers"{
     value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
 }
