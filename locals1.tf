@@ -48,4 +48,5 @@ output "years_of_work"{
 }
 output "wintersportslist"{
      value =[for sport in local.winterlistOfSports:sport]
+}
 
