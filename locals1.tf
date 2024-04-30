@@ -5,6 +5,8 @@ locals{
   landmarks4="Habitat 67"
   landmarks5="Mount Royal Park"
   winterlistOfSports=["icehockey","snowboarding","iceskating"]
+  universitiesinMontreal=["mcgill","concordia","quebec","universitydemontreal","vanier"]
+  restaurantsinmontreal=["orginalshawrma","lailak","aboualzelof","rozana","nara"]
 }
 output "print1"{
     value = local.landmarks1
@@ -49,4 +51,9 @@ output "years_of_work"{
 output "wintersportslist"{
      value =[for sport in local.winterlistOfSports:sport]
 }
-
+output " universitiesinMontreal"{
+     value =[for universities in local.universitiesinMontreal:university]
+}
+output "restaurantsinmontreal"{
+     value =[for restaurants in local.restaurantsinmontreal:restaurant]
+}
