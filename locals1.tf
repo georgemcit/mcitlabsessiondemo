@@ -4,7 +4,7 @@ locals{
   landmarks3="Biodome"
   landmarks4="Habitat 67"
   landmarks5="Mount Royal Park"
-  winterlistofSports=["icehockey","snowboarding","iceskating"]
+  winterlistOfSports=["icehockey","snowboarding","iceskating"]
 }
 output "print1"{
     value = local.landmarks1
@@ -47,5 +47,5 @@ output "years_of_work"{
  value=var.years_of_work
 }
 output "wintersportslist"{
-     value =[for sport in local.winterlistofSports:sport]
+     value =[for sport in local.winterlistOfSports:sport]
 
