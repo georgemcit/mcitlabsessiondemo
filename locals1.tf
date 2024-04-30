@@ -8,7 +8,7 @@ locals{
   universitiesinMontreal=["mcgill","concordia","quebec","universitydemontreal","vanier"]
   restaurantsinmontreal=["orginalshawrma","lailak","aboualzelof","rozana","nara"]
   total_output = ["150", "150", "150"]
-  total_output = ["4", "5", "1", "2", "3", "4", "5"]
+  total_output1 = ["4", "5", "1", "2", "3", "4", "5"]
 
 }
 output "print1"{
