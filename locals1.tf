@@ -51,7 +51,7 @@ output "years_of_work"{
 output "wintersportslist"{
      value =[for sport in local.winterlistOfSports:sport]
 }
-output " universitiesinMontreal"{
+output "universitiesinMontreal"{
      value =[for universities in local.universitiesinMontreal:university]
 }
 output "restaurantsinmontreal"{
