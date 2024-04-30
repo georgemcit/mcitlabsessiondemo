@@ -52,8 +52,8 @@ output "wintersportslist"{
      value =[for sport in local.winterlistOfSports:sport]
 }
 output "universitiesinMontreal"{
-     value =[for universities in local.universitiesinMontreal:universitiesinMontreal]
+     value =[for university in local.universitiesinMontreal: university]
 }
 output "restaurantsinmontreal"{
-     value =[for restaurants in local.restaurantsinmontreal:restaurantsinmontreal]
+     value =[for restaurant in local.restaurantsinmontreal:restaurant]
 }
