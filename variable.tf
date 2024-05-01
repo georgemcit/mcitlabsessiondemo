@@ -95,5 +95,5 @@ variable "nospace_string" {
 }
 
 output "trimmed_string" {
-  value = trim(var.whitespace_string," ")
+  value = trim(var.nospace_string," ")
 }
