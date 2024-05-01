@@ -1,3 +1,4 @@
+
 variable "original_string" {
   default = "GEORGE IBRAHIM"
 }
