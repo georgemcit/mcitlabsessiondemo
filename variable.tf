@@ -97,4 +97,10 @@ variable "nospace_string" {
 output "trimmed_string" {
   value = trim(var.nospace_string," ")
 }
+variable "original_string" {
+  default = "Montreal College Information Technology"
+}
+variable "string_list" {
+  default = ["Montreal", "College","Information","Technology"]
+}
 
