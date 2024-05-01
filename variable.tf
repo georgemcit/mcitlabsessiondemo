@@ -97,7 +97,4 @@ variable "nospace_string" {
 output "trimmed_string" {
   value = trim(var.nospace_string," ")
 }
-output "join_example" {
-  value = join("", var.nospace_string)
-}
 
