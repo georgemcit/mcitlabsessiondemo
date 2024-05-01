@@ -72,7 +72,14 @@ output "lowercase_string" {
 }
 
 output "replaced_string" {
-  value = replace(var.original_string, "GEORGE", "IBRAHIM")
+  value = replace(var.original_string, "IBRAHIM", "GEORGE")
+}
+variable "string_list" {
+  default = ["GEORGE", "IBRAHIM"]
+}
+
+output "join_name" {
+  value = join(" ", var.string_list)
 }
 
 
