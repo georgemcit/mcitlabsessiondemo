@@ -84,6 +84,8 @@ output "join_name" {
 variable "additional_string" {
   default = " from syria"
 }
-
+output "concatenated_string" {
+  value = "${var.original_string}${var.additional_string}"
+}
 
 
