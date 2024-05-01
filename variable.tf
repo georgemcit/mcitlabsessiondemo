@@ -87,5 +87,7 @@ variable "additional_string" {
 output "concatenated_string" {
   value = "${var.original_string}${var.additional_string}"
 }
-
+output "substring_example" {
+  value = substr(var.original_string, 3, -1)
+}
 
