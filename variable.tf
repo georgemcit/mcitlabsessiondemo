@@ -58,7 +58,18 @@ variable "favouritefood"{
 output "favouritefood"{
     value=[for favouritefood in var.favouritefood:favouritefood ]
 }
-
+ariable "original_string" {
+  default = "GEORGE IBRAHIM"
+}
+output "string_length" {
+  value = length(var.original_string)
+}
+output "uppercase_string" {
+  value = upper(var.original_string)
+}
+output "lowercase_string" {
+  value = lower(var.original_string)
+}
 
 
 
