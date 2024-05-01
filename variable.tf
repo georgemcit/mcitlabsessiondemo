@@ -62,7 +62,7 @@ variable "original_string" {
   default = "George Ibrahim"
 }
 output "company_name_output"{
-    value=var.company_name
+    value=var.my_name
 }
 
 
