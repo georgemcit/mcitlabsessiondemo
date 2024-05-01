@@ -97,9 +97,6 @@ variable "nospace_string" {
 output "trimmed_string" {
   value = trim(var.nospace_string," ")
 }
-variable "original1_string" {
-  default = "Montreal College Information Technology"
-}
-variable "string_list1" {
-  default = ["Montreal", "College","Information","Technology"]
+output "split_example" {
+  value = split(" ", var.original_string)
 }
