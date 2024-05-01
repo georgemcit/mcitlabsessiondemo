@@ -81,6 +81,9 @@ variable "string_list" {
 output "join_name" {
   value = join(" ", var.string_list)
 }
+variable "additional_string" {
+  default = " from syria"
+}
 
 
 
