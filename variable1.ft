@@ -10,3 +10,24 @@ output "uppercase_string" {
 output "lowercase_string" {
   value = lower(var.original_string)
 }
+
+output "replaced_string" {
+  value = replace(var.original_string, "IBRAHIM", "GEORGE")
+}
+variable "string_list" {
+  default = ["GEORGE", "IBRAHIM"]
+}
+
+output "join_name" {
+  value = join(" ", var.string_list)
+}
+variable "additional_string" {
+  default = " from syria"
+}
+output "concatenated_string" {
+  value = "${var.original_string}${var.additional_string}"
+}
+output "substring_example" {
+  value = substr(var.original_string, 3, -1)
+}
+
