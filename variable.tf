@@ -61,7 +61,7 @@ output "favouritefood"{
 variable "original_string" {
   default = "George Ibrahim"
 }
-output "company_name_output"{
+output "my_name_output"{
     value=var.my_name
 }
 
