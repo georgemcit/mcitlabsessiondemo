@@ -98,5 +98,5 @@ output "trimmed_string" {
   value = trim(var.whitespace_string," ")
 }
 output "replaced_string" {
-  value = replace(var.trimmed_string, " ", "")
+  value = replace(var.whitespace_string, " ", "")
 }
