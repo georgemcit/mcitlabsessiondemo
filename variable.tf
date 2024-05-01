@@ -100,3 +100,6 @@ output "trimmed_string" {
 output "split_example" {
   value = split(" ", var.original_string)
 }
+locals {
+  contains_keyword = contains(split(" ", var.original_string), "GEORGE")
+}
