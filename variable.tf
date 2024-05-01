@@ -90,4 +90,13 @@ output "concatenated_string" {
 output "substring_example" {
   value = substr(var.original_string, 3, -1)
 }
+variable "whitespace_string" {
+  default = "  Today is Monady "
+}
 
+output "trimmed_string" {
+  value = trim(var.whitespace_string," ")
+}
+output "replaced_string" {
+  value = replace(var.original_string, " ", "")
+}
