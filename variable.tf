@@ -58,6 +58,13 @@ variable "favouritefood"{
 output "favouritefood"{
     value=[for favouritefood in var.favouritefood:favouritefood ]
 }
+variable "original_string" {
+  default = "George Ibrahim"
+}
+output "company_name_output"{
+    value=var.company_name
+}
+
 
 
 
