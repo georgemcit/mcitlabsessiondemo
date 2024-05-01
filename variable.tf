@@ -71,7 +71,9 @@ output "lowercase_string" {
   value = lower(var.original_string)
 }
 
-
+output "replaced_string" {
+  value = replace(var.original_string, "GEORGE", "IBRAHIM")
+}
 
 
 
