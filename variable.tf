@@ -100,6 +100,7 @@ output "trimmed_string" {
 output "split_example" {
   value = split(" ", var.original_string)
 }
-output {
-  contains_keyword = contains(split(" ", var.original_string), "GEORGE")
+output "reverse_example" {
+  value = join("", reverse(split("", var.original_string)))
 }
+
