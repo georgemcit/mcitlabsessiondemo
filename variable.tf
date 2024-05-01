@@ -58,7 +58,7 @@ variable "favouritefood"{
 output "favouritefood"{
     value=[for favouritefood in var.favouritefood:favouritefood ]
 }
-ariable "original_string" {
+variable "original_string" {
   default = "GEORGE IBRAHIM"
 }
 output "string_length" {
