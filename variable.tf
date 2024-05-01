@@ -58,12 +58,8 @@ variable "favouritefood"{
 output "favouritefood"{
     value=[for favouritefood in var.favouritefood:favouritefood ]
 }
-variable "original_string" {
-  default = "George Ibrahim"
-}
-output "my_name_output"{
-    value=var.my_name
-}
+
+
 
 
 
