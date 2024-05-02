@@ -108,3 +108,4 @@ locals {
 }
 output "print7"{
     value = local.contains_keyword
+}
