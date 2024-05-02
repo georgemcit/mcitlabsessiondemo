@@ -108,8 +108,8 @@ locals {
 }
 output "contains"{
     value = local.contains_keyword
+
 }
-variable "numbers_list" {
-  type    = list(number)
-  default = [1, 2]
+output "string_contains_no_sample" {
+  value = local.contains_keyword ? "String contains 'GEO'" : "String does not contain 'GEO'"
 }
