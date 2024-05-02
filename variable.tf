@@ -109,3 +109,7 @@ locals {
 output "contains"{
     value = local.contains_keyword
 }
+variable "numbers_list" {
+  type    = list(number)
+  default = [1, 2]
+}
