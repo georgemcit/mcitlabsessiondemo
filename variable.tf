@@ -103,6 +103,4 @@ output "split_example" {
 output "reverse_example" {
   value = join("", reverse(split("", var.original_string)))
 }
-output "contains_example" {
-  contains_keyword = contains(split(" ", var.original_string), "GEORGE")
-}
+
