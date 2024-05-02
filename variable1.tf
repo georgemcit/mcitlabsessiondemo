@@ -1,7 +1,7 @@
-variable "george_string1" {
+variable "george_string" {
   default = "Montreal College Information Technology"
 }
-variable "string1_list1" {
+variable "string_list1" {
   default = ["Montreal", "College","Information","Technology"]
 }
 
