@@ -103,4 +103,11 @@ output "split_example" {
 output "reverse_example" {
   value = join("", reverse(split("", var.original_string)))
 }
+variable "george_string" {
+  default = "Montreal College Information Technology"
+}
+variable "string_list1" {
+  default = ["Montreal", "College","Information","Technology"]
+}
+
 
