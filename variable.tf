@@ -111,5 +111,5 @@ output "contains"{
 
 }
 output "string_contains_no_sample" {
-  value = local.contains_keyword ? "String contains 'GI'" : "String does not contain 'GI'"
+  value = local.contains_keyword ? "String contains 'GEORGE'" : "String does not contain 'IBRAHIM'"
 }
