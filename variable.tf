@@ -103,9 +103,4 @@ output "split_example" {
 output "reverse_example" {
   value = join("", reverse(split("", var.original_string)))
 }
-> reverse([1, 2])
-[
-  2,
-  1,
-]
 
