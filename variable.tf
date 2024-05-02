@@ -106,6 +106,6 @@ output "reverse_example" {
 locals {
   contains_keyword = contains(split(" ", var.original_string), "GEORGE")
 }
-output "print7"{
+output "contains"{
     value = local.contains_keyword
 }
