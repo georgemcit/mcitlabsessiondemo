@@ -103,4 +103,6 @@ output "split_example" {
 output "reverse_example" {
   value = join("", reverse(split("", var.original_string)))
 }
-
+output "split_of_reverse" {
+	value = reverse(split(var.numbers_lists))
+}
