@@ -35,6 +35,9 @@ output "flattened_list"{
 output "flattened_map"{
     value = local.flattened_map
 }
-output "characters"{
-    value = local.characters
+output "enemies_destroyed"{
+    value = local.enemies_destroyed
+}
+output "character_enemy_map"{
+    value = local.character_enemy_map
 }
