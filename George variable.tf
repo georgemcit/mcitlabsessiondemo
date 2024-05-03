@@ -18,6 +18,6 @@ variable "space_string" {
   default = " " 
 }
 variable "canada_string" {
-  default = "Canada "
+  default = "Canada"
 }
 
