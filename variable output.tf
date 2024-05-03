@@ -31,3 +31,6 @@ output "join_example" {
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
 }
+output "replaced_string" {
+  value = replace(var.canada_string, " ", "")
+}
