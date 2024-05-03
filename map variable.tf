@@ -33,6 +33,6 @@ output "flattened_list"{
     value = local.flattened_list
 }
 output "flattened_map"{
-    value = value = local.flattened_map
+    value = value = local.flatten([for k, v in var.nested_map : [for kk, vv in v : { group = k, key = kk, value = vv }]])
 }
 
