@@ -22,7 +22,7 @@ locals {
 output "contains"{
     value = local.contains_keyword
 }
-utput "string_contains_no_sample" {
+output "string_contains_no_sample" {
   value = local.contains_keyword ? "String contains 'CANADA'" : "String does not contain 'CANADA'"
 }
 
