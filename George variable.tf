@@ -1,14 +1,14 @@
 variable "original_string" {
-   default = ["DUBAI", "CANADA", "ITALY", "FRANCE", "GERMANY"]
+  default = "GEORGE IBRAHIM"
 }
 variable "string_list" {
-  default = ["Dubai", "Syria", "Italy", "France", "Germany"]
+  default = ["GEORGE", "IBRAHIM"]
 }
 variable "additional_string" {
-  default = " I will visit"
+  default = " from syria"
 }
 variable "nospace_string" {
-  default = "  i love Canada "
+  default = "  Today is Monady "
 }
 variable "visitcountries"{
     type =list(string)
