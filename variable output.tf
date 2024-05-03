@@ -26,9 +26,6 @@ output "concatenate_string" {
   value = "${var.love_string}${var.space_string}${var.canada_string}"
   value = trim(var.canada_string," ")
 }
-output "trimmed_string" {
-  value = trim(var.canada_string," ")
-}
 output "join_example" {
   value = join(" ", var.string_list)
 }
