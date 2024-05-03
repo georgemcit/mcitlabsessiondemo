@@ -31,4 +31,6 @@ output "concatenate_string" {
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
 }
-
+output "trimmed_string" {
+  value = trim(var.canada_string," ")
+}
