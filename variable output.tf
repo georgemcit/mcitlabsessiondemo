@@ -31,6 +31,9 @@ output "concatenate_string" {
 output "trimmed_string" {
   value = trim(var.canada_string," ")
 }
+output "substring_example" {
+  value = substr(var.canada_string, -1, 1)
+}
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
 }
