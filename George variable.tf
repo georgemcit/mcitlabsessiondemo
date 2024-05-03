@@ -1,8 +1,8 @@
 variable "original_string" {
-  default = "GEORGE IBRAHIM"
+   default = ["Dubai", "Canada", "Italy", "France", "Germany"]
 }
 variable "string_list" {
-  default = ["GEORGE", "IBRAHIM"]
+  default = ["Dubai", "Syria", "Italy", "France", "Germany"]
 }
 variable "additional_string" {
   default = " from syria"
@@ -16,8 +16,4 @@ variable "visitcountries"{
 }
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
-}
-variable "visitcountries" {
-  type    = list
-  default = ["Dubai", "Syria", "Italy", "France", "Germany"]
 }
