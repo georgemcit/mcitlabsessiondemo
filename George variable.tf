@@ -14,6 +14,6 @@ variable "visitcountries"{
     type =list(string)
   default = ["Dubai", "Syria", "Italy", "France", "Germany"]
 }
-}
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
+}
