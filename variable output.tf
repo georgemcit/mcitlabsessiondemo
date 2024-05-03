@@ -4,4 +4,7 @@ output "string_length" {
 output "uppercase_string" {
   value = upper(var.original_string)
 }
+output "lowercase_string" {
+  value = lower(var.original_string)
+}
 
