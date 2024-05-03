@@ -25,5 +25,7 @@ output "contains"{
 output "string_contains_no_sample" {
   value = local.contains_keyword ? "String contains 'CANADA'" : "String does not contain 'CANADA'"
 }
-
+output "concatenated_string" {
+  value = "${var.love_string}${var.canada_string}"
+}
 
