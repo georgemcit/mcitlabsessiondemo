@@ -13,5 +13,5 @@ output "simple_local"{
     value = local.simple_local_flattened_list
 }
 output "flattened_list"{
-    value = local.simple_local_flattened_list
+    value = local.flattened_list
 }
