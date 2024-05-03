@@ -8,7 +8,7 @@ variable "additional_string" {
   default = " I will visit"
 }
 variable "nospace_string" {
-  default = "  i love " " Canada "
+  default = "  i love Canada "
 }
 variable "visitcountries"{
     type =list(string)
