@@ -23,7 +23,7 @@ output "string_contains_no_sample" {
   value = local.contains_keyword ? "String contains 'CANADA'" : "String does not contain 'CANADA'"
 }
 output "concatenate_string" {
-  value = "${var.love_string}${var.space_string}${var.canada_string}"
+  value = "${var.love_string}${var.space_string}${var.canada_string}${trim(var.canada_string," ")"
 }
 output "trimmed_string" {
   value = trim(var.canada_string," ")
