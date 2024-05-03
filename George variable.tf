@@ -13,6 +13,7 @@ variable "nospace_string" {
 variable "original_string" {
   default = "Dubai Syria Italy France Germany"
 }
-variable "string_list" {
+variable "countries"{
+    type =list(string)
   default = ["Dubai", "Syria", "Italy", "France", "Germany"]
 }
