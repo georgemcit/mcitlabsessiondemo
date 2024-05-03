@@ -26,3 +26,6 @@ output "simple_local"{
 output "flattened_list"{
     value = local.flattened_list
 }
+output "flattened_map"{
+    value = flatten([for k, v in var.nested_map : [for kk, vv in v : { group = k, key = kk, value = vv }]])
+}
