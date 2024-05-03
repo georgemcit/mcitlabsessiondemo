@@ -23,7 +23,7 @@ output "string_contains_no_sample" {
   value = local.contains_keyword ? "String contains 'CANADA'" : "String does not contain 'CANADA'"
 }
 output "concatenate_string" {
-  value = "${var.love_string}${var.space_string}${var.canada_string}"
+  value = "${var.love_string}${var.space_string}${var.canada_string}${var.no_space_string}"
 }
 output "join_example" {
   value = join(" ", var.string_list)
