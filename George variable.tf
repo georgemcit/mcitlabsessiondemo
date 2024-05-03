@@ -13,4 +13,6 @@ variable "nospace_string" {
 variable "contrains_string" {
   default = "Dubai Syria Italy France Germany"
 }
-
+variable "string_list1" {
+  default = ["Dubai", "Syria", "Italy", "France", "Germany"]
+}
