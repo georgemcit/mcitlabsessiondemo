@@ -18,18 +18,7 @@ output "print4"{
 output "print5"{
     value = local.landmarks5
 }
-variable "company_name"{
- type=string
- default="Ipex"
-}
-variable "years_of_work"{
- type=number
- default=2
-}
-variable "ifstillworking"{
- type=bool
- default=true
-}
+
 output "company_name"{
  value=var.company_name
 }
