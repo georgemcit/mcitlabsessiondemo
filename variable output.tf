@@ -25,8 +25,5 @@ output "contains"{
 output "string_contains_no_sample" {
   value = local.contains_keyword ? "String contains 'CANADA'" : "String does not contain 'CANADA'"
 }
-output "trimmed_string" {
-  value = trim(var.nospace_string," ")
-}
 
 
