@@ -10,8 +10,8 @@ variable "additional_string" {
 variable "nospace_string" {
   default = "  Today is Monady "
 }
-variable "contains_string" {
+variable "contrains_string" {
   default = "Dubai Syria Italy Italy Germany"
 }
-variable "string_list" {
+variable "string_contrais" {
   default = ["Dubai", "Syria","Italy","Italy","Germany"]
