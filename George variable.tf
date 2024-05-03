@@ -17,3 +17,7 @@ variable "visitcountries"{
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
 }
+variable "visitcountries" {
+  type    = list
+  default = ["Dubai", "Syria", "Italy", "France", "Germany"]
+}
