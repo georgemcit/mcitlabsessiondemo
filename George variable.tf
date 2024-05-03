@@ -1,11 +1,11 @@
 variable "original_string" {
-  default = "GEORGE IBRAHIM"
+  default = "DUBAI SYRIA ITALY FRANCE GERMANY"
 }
 variable "string_list" {
-  default = ["GEORGE", "IBRAHIM"]
+  default = ["Dubai", "Syria", "Italy", "France", "Germany"]
 }
 variable "additional_string" {
-  default = " from syria"
+  default = " I will visit"
 }
 variable "nospace_string" {
   default = "  Today is Monady "
