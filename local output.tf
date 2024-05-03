@@ -1,3 +1,4 @@
+}
 output "print1"{
     value = local.landmarks1
 }
