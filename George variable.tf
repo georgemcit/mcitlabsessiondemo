@@ -11,5 +11,7 @@ variable "nospace_string" {
   default = "  Today is Monady "
 }
 variable "contains_string" {
-  default = "Dubai Syria Italy France Germany"
+  default = "Dubai Syria Italy Italy Germany"
 }
+variable "string_list" {
+  default = ["Dubai", "Syria","Italy","Italy","Germany"]
