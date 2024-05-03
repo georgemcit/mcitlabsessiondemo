@@ -10,9 +10,6 @@ variable "additional_string" {
 variable "nospace_string" {
   default = "  Today is Monady "
 }
-variable "original_string" {
-  default = "Dubai Syria Italy France Germany"
-}
 variable "countries"{
     type =list(string)
   default = ["Dubai", "Syria", "Italy", "France", "Germany"]
