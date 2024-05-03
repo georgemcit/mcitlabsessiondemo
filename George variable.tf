@@ -15,7 +15,7 @@ output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
 }
 variable "love_string" {
-  default = "I love"
+  default = "I love" "
 }
 variable "canada_string" {
   default = "Canada "
