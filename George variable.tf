@@ -17,6 +17,9 @@ output "visitcountries"{
 variable "love_string" {
   default = "I love" 
 }
+variable "space_string" {
+  default = " " 
+}
 variable "canada_string" {
   default = "Canada "
 }
