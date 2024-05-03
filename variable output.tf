@@ -28,6 +28,9 @@ output "concatenate_string" {
 output "trimmed_string" {
   value = trim(var.canada_string," ")
 }
+output "join_example" {
+  value = join(" ", var.string_list)
+}
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
 }
