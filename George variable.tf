@@ -11,8 +11,8 @@ variable "nospace_string" {
   default = "  Today is Monady "
 }
 variable "contrains_string" {
-  default = "Dubai Syria Italy Italy Germany"
+  default = "Dubai Syria Italy France Germany"
 }
 variable "string_contrais" {
-  default = ["Dubai", "Syria","Italy","Italy","Germany"]
+  default = ["Dubai", "Syria","Italy","France","Germany"]
 }
