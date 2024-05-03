@@ -34,4 +34,6 @@ output "visitcountries"{
 output "join_george" {
   value = join(" ", var.george_list)
 }
-
+variable "george_list" {
+  default = ["george", "Ibrahim"]
+}
