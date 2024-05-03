@@ -34,6 +34,6 @@ output "visitcountries"{
 output "trimmed_string" {
   value = trim(var.canada_string," ")
 }
-}
 output "join_canada" {
   value = join(" ", var.string_list)
+}
