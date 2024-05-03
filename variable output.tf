@@ -31,5 +31,7 @@ output "join_example" {
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
 }
-
+output "join_george" {
+  value = join(" ", var.george_list)
+}
 
