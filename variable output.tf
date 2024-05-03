@@ -31,7 +31,5 @@ output "join_example" {
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
 }
-output "reverse_example" {
-  value = join("", reverse(split("", var.canada_string)))
-}
+
 
