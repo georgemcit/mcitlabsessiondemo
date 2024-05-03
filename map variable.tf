@@ -35,4 +35,6 @@ output "flattened_list"{
 output "flattened_map"{
     value = local.flattened_map
 }
-
+output "characters"{
+    value = characters
+}
