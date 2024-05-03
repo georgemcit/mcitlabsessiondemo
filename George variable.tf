@@ -20,4 +20,12 @@ variable "space_string" {
 variable "canada_string" {
   default = "Canada"
 }
-
+variable "george_string" {
+  default = "GEORGE IBRAHIM"
+}
+variable "george_list" {
+  default = ["GEORGE", "IBRAHIM"]
+}
+variable "additional1_string" {
+  default = " from syria"
+}
