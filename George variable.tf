@@ -10,9 +10,9 @@ variable "additional_string" {
 variable "nospace_string" {
   default = "  Today is Monady "
 }
-variable "contrains_string" {
+variable "original_string" {
   default = "Dubai Syria Italy France Germany"
 }
-variable "string_list1" {
+variable "string_list" {
   default = ["Dubai", "Syria", "Italy", "France", "Germany"]
 }
