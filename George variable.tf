@@ -15,3 +15,4 @@ variable "contrains_string" {
 }
 variable "string_contrais" {
   default = ["Dubai", "Syria","Italy","Italy","Germany"]
+}
