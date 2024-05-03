@@ -21,4 +21,4 @@ locals {
 }
 output "contains"{
     value = local.contains_keyword
-{
+
