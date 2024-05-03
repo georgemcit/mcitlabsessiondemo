@@ -41,3 +41,6 @@ output "enemies_destroyed"{
 output "character_enemy_map"{
     value = local.character_enemy_map
 }
+output "characters"{
+    value = local.characters
+}
