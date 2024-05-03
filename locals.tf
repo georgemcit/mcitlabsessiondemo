@@ -5,4 +5,4 @@ locals{
   lengthforum=length(local.forum)
   firstname="george"
   city="montreal"
-
+}
