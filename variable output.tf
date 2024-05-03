@@ -30,5 +30,6 @@ output "join_example" {
 }
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
+}
 
 
