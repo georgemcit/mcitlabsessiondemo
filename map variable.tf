@@ -33,6 +33,4 @@ output "flattened_list"{
 output "flattened_map"{
     value = flatten([for k, v in var.nested_map : [for kk, vv in v : { group = k, key = kk, value = vv }]])
 }
-output "characters"{
-    value = local.["luke", "yoda", "darth"]
-}
+
