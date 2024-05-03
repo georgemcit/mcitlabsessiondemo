@@ -22,6 +22,9 @@ output "contains"{
 output "string_contains_no_sample" {
   value = local.contains_keyword ? "String contains 'CANADA'" : "String does not contain 'CANADA'"
 }
+output "replaced_string" {
+  value = replace(var.canada_string, " ", "")
+}
 output "concatenate_string" {
   value = "${var.love_string}${var.space_string}${var.canada_string}"
 }
@@ -31,6 +34,4 @@ output "join_example" {
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
 }
-output "replaced_string" {
-  value = replace(var.canada_string, " ", "")
-}
+
