@@ -37,3 +37,22 @@ output "sumofthreenumbers"{
 output "sumofsevennumbers"{
     value=sum([for numberoutput in local.total_output1: tonumber(numberoutput)])
 }
+output "print"{
+    value = local.servicename
+}
+output "secondprint"{
+    value = local.forum
+}
+output "lengthsa"{
+    value=local.lengthsa
+}
+output "lengthforum"{
+    value=local.lengthforum
+}
+output "thirdprint"{
+    value=local.firstname
+}
+output "fourthprint"{
+    value=local.city
+}
+
