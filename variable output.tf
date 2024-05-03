@@ -28,4 +28,7 @@ output "string_contains_no_sample" {
 output "concatenate_string" {
   value = "${var.love_string}${var.space_string}${var.canada_string}"
 }
+output "visitcountries"{
+    value=[for visitcountries in var.visitcountries:visitcountries ]
+}
 
