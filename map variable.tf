@@ -5,3 +5,6 @@ variable "simple_nested_list" {
 locals{
    simple_local_flattened_list = flatten(var.simple_nested_list)
 }
+output "simple_local"{
+    value = simple_local_flattened_list
+}
