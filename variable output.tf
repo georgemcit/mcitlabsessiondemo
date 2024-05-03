@@ -35,5 +35,5 @@ output "trimmed_string" {
   value = trim(var.canada_string," ")
 }
 output "join_canada" {
-  value = join(" ", var.string_list)
+  value = join(" ", var.canada_string)
 }
