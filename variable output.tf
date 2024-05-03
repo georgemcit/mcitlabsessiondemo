@@ -16,3 +16,8 @@ output "reverse_examplesecond"{
 output "join_example" {
   value = join(" ", var.string_list)
 }
+locals {
+  contains_keyword = contains(split(" ", var.original_string), "CANADA")
+}
+output "contains"{
+    value = local.contains_keyword
