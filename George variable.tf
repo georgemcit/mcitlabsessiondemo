@@ -5,10 +5,10 @@ variable "string_list" {
   default = ["Dubai", "Syria", "Italy", "France", "Germany"]
 }
 variable "additional_string" {
-  default = " from syria"
+  default = " I will visit"
 }
 variable "nospace_string" {
-  default = "  Today is Monady "
+  default = "  i love " " Canada "
 }
 variable "visitcountries"{
     type =list(string)
