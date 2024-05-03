@@ -10,3 +10,5 @@ variable "additional_string" {
 variable "nospace_string" {
   default = "  Today is Monady "
 }
+variable "contains_string" {
+  default = "Dubai Syria Italy France Germany"
