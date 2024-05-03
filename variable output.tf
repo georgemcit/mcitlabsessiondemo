@@ -8,6 +8,6 @@ output "lowercase_string" {
   value = lower(var.original_string)
 }
 output "concatenated_string" {
-  value = "${var.original_string}${var.additional_string}"
+  value = "${var.additional_string}${var.original_string}"
 }
 
