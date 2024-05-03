@@ -12,3 +12,4 @@ variable "nospace_string" {
 }
 variable "contains_string" {
   default = "Dubai Syria Italy France Germany"
+}
