@@ -26,7 +26,7 @@ output "concatenate_string" {
   value = "${var.love_string}${var.space_string}${var.canada_string}"
 }
 output "join_example" {
-  value = join(" ", var.string_list)
+  value = join("+", var.string_list)
 }
 output "visitcountries"{
     value=[for visitcountries in var.visitcountries:visitcountries ]
