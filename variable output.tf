@@ -13,9 +13,6 @@ output "concatenated_string" {
 output "reverse_examplesecond"{
   value=reverse(var.string_list)
 }
-output "join_example" {
-  value = join(" ", var.string_list)
-}
 locals {
   contains_keyword = contains(split(" ", var.original_string), "CANADA")
 }
