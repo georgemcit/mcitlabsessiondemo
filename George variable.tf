@@ -1,5 +1,5 @@
 variable "original_string" {
-   default = ["Dubai", "Canada", "Italy", "France", "Germany"]
+   default = ["DUBAI", "CANADA", "ITALY", "FRANCE", "GERMANY"]
 }
 variable "string_list" {
   default = ["Dubai", "Syria", "Italy", "France", "Germany"]
