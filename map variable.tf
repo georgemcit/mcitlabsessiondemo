@@ -52,6 +52,6 @@ output "character_enemy_map"{
 output "characters"{
     value = local.characters
 }
-output "number_list"{
-    value = local.number_list
+output "map_presidents_countries"{
+    value = local.map_presidents_countries
 }
