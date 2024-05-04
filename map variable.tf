@@ -7,7 +7,7 @@ variable "map_presidents_countries" {
    default = [["Obama","Justin","Kim jong Un"], ["United States","Canada", "North Korea"]]
 }
 variable "number_list" {
-  type    = list(string)
+  type    = list(list(string))
    default = [[2,2,2],[1,2,3],[2,3,2],[3,1,3]]
 }
 variable "nested_list" {
