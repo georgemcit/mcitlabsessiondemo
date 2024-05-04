@@ -1,10 +1,15 @@
 variable "simple_nested_list" {
   type    = list(list(string))
    default = [["a", "b"], ["c", "d"], ["e", "f"]]
+}
 variable "map_presidents_countries" {
   type    = list(list(string))
    default = [["Obama","Justin","Kim jong Un"], ["United States","Canada", "North Korea"]]
- }
+}
+variable "number_list" {
+  type    = list(list(string))
+   default = [[2,2,2],[1,2,3],[2,3,2],[3,1,3]]
+}
 variable "nested_list" {
   type    = list(list(string))
   default = [["a", "b"], ["c", "d"], ["e", "f"]]
