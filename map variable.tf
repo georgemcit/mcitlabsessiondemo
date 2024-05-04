@@ -52,6 +52,4 @@ output "character_enemy_map"{
 output "characters"{
     value = local.characters
 }
-output "number_list"{
-    value = local.number_list_flattened_list
-}
+
