@@ -53,5 +53,5 @@ output "characters"{
     value = local.characters
 }
 output "map_presidents_countries"{
-    value = local.map_presidents_countries
+    value = local.flattened_map
 }
