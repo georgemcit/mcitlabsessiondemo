@@ -55,4 +55,6 @@ output "thirdprint"{
 output "fourthprint"{
     value=local.city
 }
-
+output "sumotest"{
+    value=sum([for numberoutput in local.total_output2: tonumber(numberoutput)])
+}
