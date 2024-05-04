@@ -53,5 +53,5 @@ output "characters"{
     value = local.characters
 }
 output "number_list"{
-    value = local.flattened_list
+    value = local.number_list
 }
