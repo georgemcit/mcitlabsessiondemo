@@ -34,3 +34,6 @@ output "visitcountries"{
 output "join_george" {
   value = join(" ", var.george_list)
 }
+output "incremented_output"{
+    value=sum([for numberoutput in local.total_output1: tonumber(numberoutput)])
+}
