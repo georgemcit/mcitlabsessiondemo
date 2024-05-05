@@ -58,3 +58,6 @@ output "fourthprint"{
 output "sumotest"{
     value=sum([for numberoutput in local.total_output2: tonumber(numberoutput)])
 }
+output "winter_sports_message" {
+  value = local.winter_sports_message
+}
