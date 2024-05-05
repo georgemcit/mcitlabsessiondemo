@@ -29,10 +29,6 @@ variable "george_list" {
 variable "additional1_string" {
   default = " from syria"
 }
-variable "total_output" {
-  type    = list(string)
-  default = ["150", "150", "150"]
-}
 variable "incremented_output" {
   type    = list(string)
   default = ["160", "160", "160"]
