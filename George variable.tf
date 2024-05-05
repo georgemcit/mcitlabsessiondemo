@@ -29,7 +29,12 @@ variable "george_list" {
 variable "additional1_string" {
   default = " from syria"
 }
-variable "incremented_output" {
+variable "total_output" {
   type    = list(string)
-  default = ["160", "160", "160"]
+  default = ["150", "150", "150"]
+}
+locals {
+  incremented_output = [
+    for value in var.total_output : tostring(tonumber(value) + 10)
+  ]
 }
