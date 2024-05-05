@@ -35,5 +35,5 @@ variable "total_output" {
 }
 variable "incremented_output" {
   type    = list(string)
-  default = ["10", "10", "10"]
+  default = ["160", "160", "160"]
 }
