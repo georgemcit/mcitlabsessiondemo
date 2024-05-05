@@ -58,7 +58,3 @@ output "fourthprint"{
 output "sumotest"{
     value=sum([for numberoutput in local.total_output2: tonumber(numberoutput)])
 }
-}
-output "incremented_output"{
-    value=sum([for numberoutput in local.total_output1: tonumber(numberoutput)])
-}
