@@ -33,6 +33,8 @@ locals{
   enemies_destroyed = [4252, 900, 20000056894]
   character_enemy_map =   { for index,character in local.characters: # Convert character list to a set
       character => local.enemies_destroyed[index]
+  winterlistOfSports=["icehockey","snowboarding","iceskating"]
+  winter_sports_message = length(local.winterlistOfSports) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
   }
 }
 output "simple_local"{
@@ -68,4 +70,7 @@ locals {
 }
 output "incremented_output_show" {
   value=local.incremented_output
+}
+output "winter_sports_message" {
+  value = local.winter_sports_message
 }
