@@ -35,5 +35,5 @@ output "join_george" {
   value = join(" ", var.george_list)
 }
 output "incremented_output"{
-    value=sum([for numberoutput in incremented_output: tonumber(numberoutput)])
+    value=sum([for numberoutput in var.incremented_output: tonumber(numberoutput)])
 }
