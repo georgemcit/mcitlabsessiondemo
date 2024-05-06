@@ -7,9 +7,9 @@ variable "clouds_list" {
 locals {
   contains_keyword = contains(split(" ", var.clouds_string), "azure")
 }
-output "contains"{
+output "contains_clouds"{
     value = local.contains_keyword
 }
-output "string_contains_no_sample" {
+output "string_contains_clouds" {
   value = local.contains_keyword ? "String contains 'azure'" : "String does not contain 'azure'"
 }
