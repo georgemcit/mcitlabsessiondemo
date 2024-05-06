@@ -4,13 +4,6 @@ variable "clouds_string" {
 variable "clouds_list" {
   default = ["azure","aws","gcp","alibaba","ibm"]
 }
-output "uppercase_string2" {
-  value = upper(var.clouds_string)
-}
-output "lowercase_string2" {
-  value = lower(var.clouds_string)
-}
-
 output "clouds_string_string" {
   value = var.clouds_string
 }
@@ -29,4 +22,6 @@ variable "cloud_owners_string" {
 variable "cloud_owners_list" {
   default = ["Microsoft", "Amazon", "Google"]
 }
-
+output "cloud_owners_string_string" {
+  value = var.cloud_owners_string
+}
