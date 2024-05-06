@@ -3,6 +3,7 @@ variable "clouds_string" {
 }
 variable "clouds_list" {
   default = ["azure","aws","gcp"]
+}
 locals {
   contains_keyword = contains(split(" ", var.clouds_string), "azure")
 }
