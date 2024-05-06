@@ -2,7 +2,7 @@ variable "simple_nested_list" {
   type    = list(list(string))
    default = [["a", "b"], ["c", "d"], ["e", "f"]]
 }
-variable "map_presidents_countries" {
+variable "presidents_countries" {
   type    = list(list(string))
    default = [["Obama","Justin","Kim jong Un"], ["United States","Canada", "North Korea"]]
 }
@@ -26,7 +26,7 @@ variable "nested_map" {
 
 locals{
    simple_local_flattened_list = flatten(var.simple_nested_list)
-   map_presidents_countries_flattened_list = flatten(var.map_presidents_countries)
+   presidents_countries_flattened_list = flatten(var.presidents_countries)
    number_list = flatten(var.number_list)
    flattened_list = flatten(var.nested_list)
    flattened_map  = flatten([for k, v in var.nested_map : [for kk, vv in v : { group = k, key = kk, value = vv }]])
@@ -71,5 +71,5 @@ output "incremented_output_show" {
   value=local.incremented_output
 }
 output "map_presidents_countries"{
-    value = map_presidents_countries_flattened_list
+    value = local.presidents_countries_flattened_list
 }
