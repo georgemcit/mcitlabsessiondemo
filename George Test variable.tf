@@ -1,6 +1,6 @@
-variable "string_list" {
+variable "clouds_list" {
   default = ["azure","aws","gcp"]
 }
 output "clouds"{
-  value=var.string_list
+  value=var.clouds_list
 }
