@@ -14,7 +14,7 @@ output "contains_clouds"{
     value = local.contains_clous_keyword
 }
 output "string_contains_clouds" {
-  value = local.contains_clous_keyword ? "String contains 'notazure'" : "String does not contain 'notazure'"
+  value = local.contains_clous_keyword ? "String contains 'Azure'" : "String does not contain 'Azure'"
 }
 variable "cloud_owners_string" {
   default = "Alibaba Ibm"
