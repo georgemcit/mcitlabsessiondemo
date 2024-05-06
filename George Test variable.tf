@@ -1,8 +1,8 @@
 variable "clouds_string" {
-  default = "Azure Aws Gcp"
+  default = "Azure Aws Gcp Alibaba Ibm"
 }
 variable "clouds_list" {
-  default = ["azure","aws","gcp"]
+  default = ["azure","aws","gcp","alibaba","ibm"]
 }
 locals {
   contains_clous_keyword = contains(split(" ", var.clouds_string), "azure")
@@ -13,9 +13,9 @@ output "contains_clouds"{
 output "string_contains_clouds" {
   value = local.contains_keyword ? "String contains 'azure'" : "String does not contain 'azure'"
 }
-variable "clous_additional_string" {
+variable "cloud_owners_string" {
   default = "Alibaba Ibm"
 }
-variable "clous_additiona_list" {
-  default = ["alibaba","ibm"]
+variable "cloud_owners_list" {
+  default = ["Microsoft", "Amazon", "Google"]
 }
