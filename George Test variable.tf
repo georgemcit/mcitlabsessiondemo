@@ -32,6 +32,6 @@ variable "number_list_test" {
 locals{
    number_list_test = flatten(var.number_list_test)
 }
-output "number_list"{
+output "number_list_test"{
       value = local.number_list_test
 }
