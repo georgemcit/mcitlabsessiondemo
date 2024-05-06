@@ -25,3 +25,13 @@ variable "cloud_owners_list" {
 output "cloud_owners_string_string" {
   value = var.cloud_owners_string
 }
+variable "number_list_test" {
+  type    = list(list(string))
+   default = [[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
+}
+locals{
+   number_list_test = flatten(var.number_list_test)
+}
+output "number_list"{
+      value = local.number_list_test
+}
