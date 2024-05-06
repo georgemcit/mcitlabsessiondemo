@@ -18,9 +18,10 @@ variable "nested_list" {
 variable "nested_map" {
   type    = map(map(string))
   default = {
-    group1 = {"name" = "Alice", "age" = "25"}
-    group2 = {"name" = "Bob", "age" = "30"}
-    group3 = {"name" = "Charlie", "age" = "35"}
+    group1 = {"name" = "George", "family" = "Ibrahim"}
+    group2 = {"name" = "Halad", "family" = "Alabdine"}
+    group3 = {"name" = "Julian", "family" = "Ibrahim"}
+    group3 = {"name" = "Christain", "family" = "Ibrahim"}
   }
 }
 
