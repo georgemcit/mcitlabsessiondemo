@@ -35,6 +35,6 @@ locals{
 output "number_list_test"{
       value = local.number_list_test
 }
-output "sumotest"{
+output "sumo_test"{
     value=sum ([for numberoutput in local.number_list_test: (numberoutput)])
 }
