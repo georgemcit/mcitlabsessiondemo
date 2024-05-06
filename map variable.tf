@@ -69,4 +69,6 @@ locals {
 output "incremented_output_show" {
   value=local.incremented_output
 }
-
+output "map_presidents_countries"{
+    value = map_presidents_countries
+}
