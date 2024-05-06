@@ -17,7 +17,7 @@ output "string_contains_clouds" {
   value = local.contains_clous_keyword ? "String contains 'Azure'" : "String does not contain 'Azure'"
 }
 variable "cloud_owners_string" {
-  default = "Alibaba Ibm"
+  default = "Microsoft Amazon Google"
 }
 variable "cloud_owners_list" {
   default = ["Microsoft", "Amazon", "Google"]
