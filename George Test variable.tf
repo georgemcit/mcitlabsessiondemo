@@ -14,8 +14,8 @@ output "string_contains_clouds" {
   value = local.contains_keyword ? "String contains 'azure'" : "String does not contain 'azure'"
 }
 variable "clous_additional_string" {
-  default = ["azure","aws","gcp"]
+  default = "Alibaba Ibm"
 }
 variable "clous_additiona_list" {
-  default = ["azure","aws","gcp"]
+  default = ["alibaba","ibm"]
 }
