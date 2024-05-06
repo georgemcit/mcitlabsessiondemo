@@ -5,7 +5,7 @@ output "clouds_list"{
   value=var.clouds_list
 }
 locals {
-  clouds_keyword = clouds(split(" ", var.clouds_list), "azure")
+  clouds_keyword = clouds_list(split(" ", var.clouds_list), "azure")
 }
 output "clouds"{
     value = local.clouds_keyword
