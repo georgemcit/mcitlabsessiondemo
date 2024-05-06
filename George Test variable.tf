@@ -8,7 +8,7 @@ output "clouds_string_string" {
   value = var.clouds_string
 }
 locals {
-  contains_clous_keyword = contains(split(" ", var.clouds_string), "azure")
+  contains_clous_keyword = contains(split(" ", var.clouds_string), "Azure")
 }
 output "contains_clouds"{
     value = local.contains_clous_keyword
