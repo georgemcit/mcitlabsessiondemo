@@ -3,10 +3,12 @@ variable "clouds_string" {
 }
 variable "clouds_list" {
   default = ["azure","aws","gcp"]
-}
 locals {
-  cluds_keyword = clouds_list(split(" ", var.clouds_string), "azure")
+  contains_keyword = contains(split(" ", var.clouds_string), "azure")
 }
-output "clouds"{
-    value = local.clouds_keyword
+output "contains"{
+    value = local.contains_keyword
+}
+output "string_contains_no_sample" {
+  value = local.contains_keyword ? "String contains 'azure'" : "String does not contain 'azure'"
 }
