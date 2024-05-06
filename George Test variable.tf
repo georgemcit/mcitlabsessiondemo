@@ -4,14 +4,14 @@ variable "clouds_string" {
 variable "clouds_list" {
   default = ["azure","aws","gcp","alibaba","ibm"]
 }
-output "uppercase_string" {
+output "uppercase_string2" {
   value = upper(var.clouds_string)
 }
-output "lowercase_string" {
+output "lowercase_string2" {
   value = lower(var.clouds_string)
 }
 
-output "lowercase_string" {
+output "clouds_string_string" {
   value = var.clouds_string
 }
 locals {
