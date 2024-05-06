@@ -29,7 +29,4 @@ variable "cloud_owners_string" {
 variable "cloud_owners_list" {
   default = ["Microsoft", "Amazon", "Google"]
 }
-output "uppercase_string1" {
-  value = upper(var.cloud_owners_list)
-}
 
