@@ -16,3 +16,6 @@ output "string_contains_clouds" {
 variable "clous_additional_string" {
   default = ["azure","aws","gcp"]
 }
+variable "clous_additiona_list" {
+  default = ["azure","aws","gcp"]
+}
