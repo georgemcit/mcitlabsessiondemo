@@ -8,13 +8,13 @@ output "clouds_string_string" {
   value = var.clouds_string
 }
 locals {
-  contains_clous_keyword = contains(split(" ", var.clouds_string), "azure")
+  contains_clous_keyword = contains(split(" ", var.clouds_string), "Azure")
 }
 output "contains_clouds"{
     value = local.contains_keyword
 }
 output "string_contains_clouds" {
-  value = local.contains_keyword ? "String contains 'azure'" : "String does not contain 'azure'"
+  value = local.contains_keyword ? "String contains 'Azure'" : "String does not contain 'Azure'"
 }
 variable "cloud_owners_string" {
   default = "Alibaba Ibm"
