@@ -4,6 +4,16 @@ variable "clouds_string" {
 variable "clouds_list" {
   default = ["azure","aws","gcp","alibaba","ibm"]
 }
+output "uppercase_string" {
+  value = upper(var.clouds_string)
+}
+output "lowercase_string" {
+  value = lower(var.clouds_string)
+}
+
+output "lowercase_string" {
+  value = var.clouds_string
+}
 locals {
   contains_clous_keyword = contains(split(" ", var.clouds_string), "azure")
 }
@@ -18,4 +28,10 @@ variable "cloud_owners_string" {
 }
 variable "cloud_owners_list" {
   default = ["Microsoft", "Amazon", "Google"]
+}
+output "uppercase_string1" {
+  value = upper(var.cloud_owners_list)
+}
+output "lowercase_string1" {
+  value = lower(cloud_owners_list)
 }
