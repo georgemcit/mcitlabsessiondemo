@@ -1,7 +1,7 @@
 variable "clouds_list" {
   default = ["azure","aws","gcp"]
 }
-output "clouds"{
+output "clouds_list"{
   value=var.clouds_list
 }
 locals {
@@ -12,3 +12,4 @@ output "clouds"{
 }
 output "string_clouds" {
   value = local.clouds_keyword ? "String clouds 'azure'" : "String does not contain 'azure'"
+}
