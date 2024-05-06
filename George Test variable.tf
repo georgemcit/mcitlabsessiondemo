@@ -32,6 +32,4 @@ variable "cloud_owners_list" {
 output "uppercase_string1" {
   value = upper(var.cloud_owners_list)
 }
-output "lowercase_string1" {
-  value = lower(cloud_owners_list)
-}
+
