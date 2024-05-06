@@ -11,5 +11,5 @@ locals{
   total_output2 = ["724","238","219","291","555"]
   winter_sports_message = length(local.winterlistOfSports) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
   winterlistOfSports=["icehockey","snowboarding","iceskating"]
-  -->winterlistOfSports=["icehockey","snowboarding","iceskating","sledging"]
+  winterlistOfSports=["icehockey","snowboarding","iceskating","sledging"]
 }
