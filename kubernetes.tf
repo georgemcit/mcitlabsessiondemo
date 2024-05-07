@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "georgeazureresourcegroup" {
   name     = "george_ibrahim_05_1980"
   location = "Canada Central"
 }
-resource "azurerm_resource_group" "georgeazureresourcegroup" {
+resource "azurerm_resource_group" "georgeibrahimazureresourcegroup" {
   name     = "george_ibrahim_01_05_1980"
   location = "East US"
 }
