@@ -1,3 +1,6 @@
+variable "r_g_string" {
+  default = "George_ibrahim_1980"
+}
 variable "original_string" {
   default = "DUBAI SYRIA ITALY FRANCE GERMANY"
 }
