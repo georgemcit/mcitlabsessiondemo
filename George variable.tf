@@ -3,7 +3,7 @@ variable "azurerm_resource_group_string" {
   location = "East US"
 }
 output "azurerm_resource_group_string" {
-  value = var."r_g_string"
+  value = var."azurerm_resource_group_string"
 }
 variable "original_string" {
   default = "DUBAI SYRIA ITALY FRANCE GERMANY"
