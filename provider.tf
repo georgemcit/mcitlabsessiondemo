@@ -17,8 +17,3 @@ provider "azurerm"{
   client_secret=var.client_secret
   tenant_id=var.tenant_id
 }
-output "id" {
-  value = [
-    for cluster in azurerm_kubernetes_cluster.batchabcd: cluster.id
-  ]
-}
