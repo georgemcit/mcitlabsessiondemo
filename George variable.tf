@@ -1,5 +1,9 @@
 variable "r_g_string" {
-  default = "George_ibrahim_1980"
+  name = "George_ibrahim_05_1980"
+  location = "East US"
+}
+output "r_g_string" {
+  value = var."r_g_string"
 }
 variable "original_string" {
   default = "DUBAI SYRIA ITALY FRANCE GERMANY"
