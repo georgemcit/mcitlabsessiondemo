@@ -1,8 +1,8 @@
-variable "r_g_string" {
+variable "azurerm_resource_group_string" {
       name = "George_ibrahim_05_1980"
   location = "East US"
 }
-output "r_g_string" {
+output "azurerm_resource_group_string" {
   value = var."r_g_string"
 }
 variable "original_string" {
