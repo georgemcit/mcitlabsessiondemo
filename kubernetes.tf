@@ -1,7 +1,14 @@
 locals{ 
-  cluster_names=["k8batcha06","k9batcha06","k10batcha06","k11batcha06","k12batcha06"]
+  cluster_names=["georgeazureresourcegroup"]
 }
 resource "azurerm_resource_group" "georgeazureresourcegroup" {
   name     = "George_ibrahim_1980"
   location = "Canada Central"
+}
+locals{ 
+  cluster_names=["georgeibrahimazureresourcegroup"]
+}
+resource "azurerm_resource_group" "georgeibrahimazureresourcegroup" {
+  name     = "George_ibrahim_05_1980"
+  location = "East US"
 }
