@@ -1,5 +1,5 @@
 variable "r_g_string" {
-  name = "George_ibrahim_05_1980"
+      name = "George_ibrahim_05_1980"
   location = "East US"
 }
 output "r_g_string" {
