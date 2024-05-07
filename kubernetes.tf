@@ -6,7 +6,7 @@ resource "azurerm_resource_group" "georgeazureresourcegroup" {
   location = "Canada Central"
 }
 locals{ 
-  cluster_names=["georgeibrahimazureresourcegroup"]
+  cluster_names_1=["georgeibrahimazureresourcegroup"]
 }
 resource "azurerm_resource_group" "georgeibrahimazureresourcegroup" {
   name     = "George_ibrahim_05_1980"
