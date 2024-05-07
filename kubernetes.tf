@@ -14,14 +14,17 @@ provider "azurerm"{
   location =var.UAE North 
 }
 variable "resource"{
-  type=string
+  type=string+
 }
+
 variable "resource"{
   type=string
 }
+
 variable "name"{
   type=string
 }
+
 variable "location"{
   type=string
 }
