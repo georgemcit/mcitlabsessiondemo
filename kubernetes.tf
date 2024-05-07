@@ -30,3 +30,8 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
     Environment = "Production"
   }
 }
+output "id" {
+  value = [
+    for cluster in azurerm_kubernetes_cluster.batchabcd: cluster.id
+  ]
+}
