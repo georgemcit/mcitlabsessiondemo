@@ -42,7 +42,7 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
   tags = {
     Environment = "Production"
   }
-output "kube_name"{
+output "cluster_list"{
   value=[for cluster in azurerm_kubernetes_cluster.batchabcd:cluster.name ]
 }
 }
