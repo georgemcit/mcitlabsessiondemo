@@ -22,7 +22,13 @@ output "resource_location" {
 locals{ 
   cluster_names=["george06","george006","george0006","george00006","george0000006"]
 }
- default_node_pool {
+resource "azurerm_kubernetes_cluster" "batchabcd" {
+   name                = "${var.prefix}cluster"
+  location            = azurerm_resource_group.azureresourcegroup.location
+  resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = "exampleaks1"
+
+  default_node_pool {
     name       = "default"
     node_count = 1
     vm_size    = "Standard_D2_v2"
