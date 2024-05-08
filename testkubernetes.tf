@@ -1,6 +1,6 @@
 #This is an Azure Montreal College Tutorial for Storage Account creation--->Storage Container name Creation--->Storage Blob Creation
 locals{
-   clusterlist=["CCRF2301_montrealcluster","CCRF2301_torontocluster","CCRF2301_vancouvercluster","CCRF2301_albertacluster"]
+   cluster_list=["CCRF2301_montrealcluster","CCRF2301_torontocluster","CCRF2301_vancouvercluster","CCRF2301_albertacluster"]
 }
 resource "azurerm_kubernetes_cluster" "simplekubernetescluster" {
   name                = "mcitsimplekubernetescluster"
@@ -23,7 +23,7 @@ resource "azurerm_kubernetes_cluster" "simplekubernetescluster" {
   }
 }
 resource "azurerm_kubernetes_cluster" "batchabcd" {
-  for_each            = {for cluster in local.cluster_names: cluster=>cluster}
+  for_each            = {for cluster in local.cluster_list: cluster=>cluster}
   name                = "${var.prefix}cluster"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
