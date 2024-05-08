@@ -1,18 +1,4 @@
 
-variable "name_resource_group"{
-    type=string
-    default="george_ibrahim_resource_group"
-}
-variable "location_resource_group"{
-    type=string
-    default="Canada Central"
-}
-output "resource_name" {
-  value = var.name_resource_group
-}
-output "resource_location" {
-  value = var.location_resource_group
-}
 locals{ 
   cluster_names=["george01","george02","george03","george04","george05"]
 }
