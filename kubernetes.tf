@@ -20,7 +20,7 @@ output "resource_location" {
   value = var.location_resource_group
 }
 locals{ 
-  cluster_names=["k8batcha06","k9batcha06","k10batcha06","k11batcha06","k12batcha06"]
+  cluster_names=["george06","george006","george0006","george00006","george0000006"]
 }
 resource "azurerm_kubernetes_cluster" "batchabcd" {
   for_each            = {for cluster in local.cluster_names: cluster=>cluster}
