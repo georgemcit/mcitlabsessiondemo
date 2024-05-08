@@ -20,14 +20,42 @@ output "resource_location" {
   value = var.location_resource_group
 }
 locals{ 
-  cluster_names=["george06","george006","george0006","george00006","george0000006"]
+  cluster_names=["george01","george02","george03","george04","george05"]
 }
-resource "azurerm_kubernetes_cluster" "batchabcd" {
-   name                = "${var.prefix}cluster"
+resource "azurerm_resource_group" "azureresourcegroup" {
+  name     = "george_ibrahim_1980"
+  location = "Canada Central"
+}
+resource "azurerm_kubernetes_cluster" "simplekubernetescluster1" {
+  name                = "george1"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
   dns_prefix          = "exampleaks1"
-
+}
+resource "azurerm_kubernetes_cluster" "simplekubernetescluster2" {
+  name                = "george2"
+  location            = azurerm_resource_group.azureresourcegroup.location
+  resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = "exampleaks2"
+}
+resource "azurerm_kubernetes_cluster" "simplekubernetescluster3" {
+  name                = "george3"
+  location            = azurerm_resource_group.azureresourcegroup.location
+  resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = "exampleaks1"
+}
+resource "azurerm_kubernetes_cluster" "simplekubernetescluster4" {
+  name                = "george4"
+  location            = azurerm_resource_group.azureresourcegroup.location
+  resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = "exampleaks1"
+}
+resource "azurerm_kubernetes_cluster" "simplekubernetescluster5" {
+  name                = "george5"
+  location            = azurerm_resource_group.azureresourcegroup.location
+  resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = "exampleaks1"
+}
   default_node_pool {
     name       = "default"
     node_count = 1
