@@ -7,9 +7,6 @@ variable "location_resource_group"{
     type=string
     default="Canada Central"
 }
-output "resource_group" {
-  value = var.resource_group
-}
 output "resource_name" {
   value = var.name_resource_group
 }
