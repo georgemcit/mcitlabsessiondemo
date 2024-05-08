@@ -1,7 +1,4 @@
-variable "resource_group"{
-    type=string
-    default="azurerm_resource_group_1" 
-}
+
 variable "name_resource_group"{
     type=string
     default="george_ibrahim_resource_group"
