@@ -1,3 +1,24 @@
+variable "resource_group"{
+    type=string
+    default="azurerm_resource_group" "azureresourcegroup"
+}
+variable "name_resource_group"{
+    type=string
+    default="george_ibrahim_resource_group"
+}
+variable "location_resource_group"{
+    type=string
+    default="Canada Central"
+}
+output "resource" {
+  value = var.resource_group
+}
+output "name" {
+  value = var.name_resource_group
+}
+output "location" {
+  value = var.location_resource_group
+}
 locals{ 
   cluster_names=["k8batcha06","k9batcha06","k10batcha06","k11batcha06","k12batcha06"]
 }
