@@ -43,6 +43,6 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
     Environment = "Production"
   }
 output "cluster_list"{
-  value=[for cluster in azurerm_kubernetes_cluster.CCRF2301:cluster.name ]
+  value=[for cluster in azurerm_testkubernetes_cluster.CCRF2301:cluster.name ]
 }
 }
