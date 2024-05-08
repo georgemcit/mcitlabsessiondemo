@@ -1,14 +1,6 @@
 locals{ 
   cluster_names=["k8batcha06","k9batcha06","k10batcha06","k11batcha06","k12batcha06"]
 }
-resource "azurerm_resource_group" "georgeazureresourcegroup" {
-  name     = "george_ibrahim_05_1980"
-  location = "Canada Central"
-}
-resource "azurerm_resource_group" "georgeibrahimazureresourcegroup" {
-  name     = "george_ibrahim_01_05_1980"
-  location = "East US"
-}
 resource "azurerm_kubernetes_cluster" "batchabcd" {
   for_each            = {for cluster in local.cluster_names: cluster=>cluster}
   name                = "${var.prefix}cluster"
