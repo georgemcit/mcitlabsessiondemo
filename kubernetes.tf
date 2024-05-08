@@ -10,13 +10,13 @@ variable "location_resource_group"{
     type=string
     default="Canada Central"
 }
-output "resource" {
+output "resource_group" {
   value = var.resource_group
 }
-output "name" {
+output "resource_name" {
   value = var.name_resource_group
 }
-output "location" {
+output "resource_location" {
   value = var.location_resource_group
 }
 locals{ 
