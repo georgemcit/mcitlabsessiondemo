@@ -1,6 +1,6 @@
 variable "resource_group"{
     type=string
-    default="azurerm_resource_group" "azureresourcegroup"
+    default="azurerm_resource_group" 
 }
 variable "name_resource_group"{
     type=string
