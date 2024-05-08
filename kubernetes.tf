@@ -23,7 +23,7 @@ locals{
   cluster_names=["george01","george02","george03","george04","george05"]
 }
 resource "azurerm_resource_group" "azureresourcegroup" {
-  name     = "george_ibrahim_1980"
+  name     = "george_ibrahim_1980_01_05"
   location = "Canada Central"
 }
 resource "azurerm_kubernetes_cluster" "simplekubernetescluster1" {
@@ -55,8 +55,7 @@ resource "azurerm_kubernetes_cluster" "simplekubernetescluster5" {
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
   dns_prefix          = "exampleaks1"
-}
-  default_node_pool {
+default_node_pool {
     name       = "default"
     node_count = 1
     vm_size    = "Standard_D2_v2"
