@@ -1,6 +1,7 @@
 #This is an Azure Montreal College Tutorial for Storage Account creation--->Storage Container name Creation--->Storage Blob Creation
 locals{
    clusterlist=["CCRF2301_montrealcluster","CCRF2301_torontocluster","CCRF2301_vancouvercluster","CCRF2301_albertacluster"]
+}
 resource "azurerm_kubernetes_cluster" "simplekubernetescluster" {
   name                = "mcitsimplekubernetescluster"
   location            = azurerm_resource_group.azureresourcegroup.location
