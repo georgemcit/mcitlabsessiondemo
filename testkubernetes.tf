@@ -1,12 +1,12 @@
 #This is an Azure Montreal College Tutorial for Storage Account creation--->Storage Container name Creation--->Storage Blob Creation
 locals{
-   cluster_list=["CCRF2301_montrealcluster","CCRF2301_torontocluster","CCRF2301_vancouvercluster","CCRF2301_albertacluster"]
+   cluster_list=["ccrf2301_montrealcluster","ccrf2301_torontocluster","ccrf2301_vancouvercluster","ccrf2301_albertacluster"]
 }
 resource "azurerm_kubernetes_cluster" "georgeibrahimcluster" {
   name                = "georgeibrahimcluster"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
-  dns_prefix          = "CCRF2301"
+  dns_prefix          = "ccrf2301"
 
   default_node_pool {
     name       = "default"
@@ -27,7 +27,7 @@ resource "azurerm_kubernetes_cluster" "george" {
   name                = "${var.prefix}cluster"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
-  dns_prefix          = "CCRF2301"
+  dns_prefix          = "ccrf2301"
 
   default_node_pool {
     name       = "default"
