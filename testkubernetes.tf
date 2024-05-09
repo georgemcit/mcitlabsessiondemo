@@ -55,7 +55,7 @@ output "identity" {
 }
 variable "tags"{
  type=string
- Environment = "Production"
+ value = "Production"
 }
 output "tags" {
   value = var.tags
