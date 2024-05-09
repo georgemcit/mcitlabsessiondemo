@@ -22,7 +22,7 @@ resource "azurerm_kubernetes_cluster" "georgeibrahimcluster" {
     Environment = "Production"
   }
 }
-resource "azurerm_kubernetes_cluster" "batchabcd" {
+resource "azurerm_kubernetes_cluster" "george" {
   for_each            = {for cluster in local.cluster_list: cluster=>cluster}
   name                = "${var.prefix}cluster"
   location            = azurerm_resource_group.azureresourcegroup.location
@@ -44,7 +44,7 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
   }
 }
 output "kube_name"{
-  value=[for cluster in azurerm_kubernetes_cluster.batchabcd:cluster.name ]
+  value=[for cluster in azurerm_kubernetes_cluster.george:cluster.name ]
 }
 variable "identity"{
  type=string
