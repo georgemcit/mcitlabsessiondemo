@@ -46,10 +46,10 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
 output "kube_name"{
   value=[for cluster in azurerm_kubernetes_cluster.batchabcd:cluster.name ]
 }
-variable "vm_size"{
+variable "identity"{
  type=string
- default="Standard_D2_v2"
+ default="SystemAssigned"
 }
-output "vm_size" {
-  value = Standard_D2_v2
+output "identity" {
+  value = var.identity
 }
