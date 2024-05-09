@@ -2,7 +2,7 @@
 locals{
    cluster_list=["CCRF2301_montrealcluster","CCRF2301_torontocluster","CCRF2301_vancouvercluster","CCRF2301_albertacluster"]
 }
-resource "azurerm_kubernetes_cluster" "simplekubernetescluster" {
+resource "azurerm_kubernetes_cluster" "georgeibrahimcluster" {
   name                = "georgeibrahimcluster"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
