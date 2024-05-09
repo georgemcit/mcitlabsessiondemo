@@ -50,6 +50,6 @@ variable "vm_size"{
  type=string
  default="Standard_D2_v2"
 }
-output "vm_size " {
+output "vm_size" {
   value = Standard_D2_v2
 }
