@@ -46,3 +46,6 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
 output "kube_name"{
   value=[for cluster in azurerm_kubernetes_cluster.batchabcd:cluster.name ]
 }
+output "default_node_pool" {
+  value = var.default_node_pool
+}
