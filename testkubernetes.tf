@@ -6,7 +6,7 @@ resource "azurerm_kubernetes_cluster" "simplekubernetescluster" {
   name                = "georgeibrahimcluster"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
-  dns_prefix          = "CCRF2301"
+  dns_prefix          = var.CCRF2301
 
   default_node_pool {
     name       = "default"
