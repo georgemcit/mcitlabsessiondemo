@@ -18,7 +18,6 @@ locals{
   firstname="george"
   city="montreal"
 }
-}
 output "print1"{
     value = local.landmarks1
 }
