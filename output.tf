@@ -1,4 +1,4 @@
-resource "azurerm_kubernetes_cluster" "george" {
+resource "azurerm_kubernetes_cluster" "george1" {
   for_each            = {for cluster in local.cluster_list: cluster=>cluster}
   name                = "${var.prefix}cluster"
   location            = azurerm_resource_group.azureresourcegroup.location
