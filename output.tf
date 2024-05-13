@@ -1,18 +1,18 @@
-varible "dns_prefix"{
+variable "dns_prefix"{
   type=string
 {
-varible "default_node_pool_name"{
+variable  "default_node_pool_name"{
   type=string
 {
-varible "default_node_pool_count"{
+variable  "default_node_pool_count"{
   type=number
 {
-varible "identity"{
+variable  "identity"{
   type=string
 {
-varible "environment_tag"{
+variable  "environment_tag"{
   type=string
 {
-varible "default_node_pool_vm_size"{
+variable  "default_node_pool_vm_size"{
   type=number
 {
