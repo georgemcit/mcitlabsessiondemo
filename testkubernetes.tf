@@ -31,7 +31,7 @@ resource "azurerm_kubernetes_cluster" "george" {
 
   default_node_pool {
     name       = var.default_node_pool_name
-    node_count = var.default_node_pool_count
+    node_count = var.default_node_pool__nodecount
     vm_size    = var.default_node_pool_vm_size 
   }
 
