@@ -6,27 +6,6 @@ resource "azurerm_kubernetes_cluster" "georgeibrahimcluster" {
   name                = "georgeibrahimcluster"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
-  dns_prefix          = var.dns_prefix
-
-  default_node_pool {
-    name       = var.default_node_pool_name
-    node_count = var.default_node_pool_count
-    vm_size    = var.default_node_pool_vm_size 
-  }
-
-  identity {
-    type = var.identity
-  }
-
-  tags = {
-    Environment = var.environment_tag
-  }
-}
-resource "azurerm_kubernetes_cluster" "george" {
-  for_each            = {for cluster in local.cluster_list: cluster=>cluster}
-  name                = "${var.prefix}cluster"
-  location            = azurerm_resource_group.azureresourcegroup.location
-  resource_group_name = azurerm_resource_group.azureresourcegroup.name
   dns_prefix          = "ccrf2301"
 
   default_node_pool {
@@ -41,6 +20,27 @@ resource "azurerm_kubernetes_cluster" "george" {
 
   tags = {
     Environment = "Production"
+  }
+}
+resource "azurerm_kubernetes_cluster" "george" {
+  for_each            = {for cluster in local.cluster_list: cluster=>cluster}
+  name                = "${var.prefix}cluster"
+  location            = azurerm_resource_group.azureresourcegroup.location
+  resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = var.dns_prefix
+
+  default_node_pool {
+    name       = var.default_node_pool_name
+    node_count = var.default_node_pool_count
+    vm_size    = var.default_node_pool_vm_size 
+  }
+
+  identity {
+    type = var.identity
+  }
+
+  tags = {
+    Environment = var.environment_tag
   }
 }
 output "kube_name"{
