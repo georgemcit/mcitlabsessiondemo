@@ -1,4 +1,4 @@
-resource "azurerm_kubernetes_cluster_node_pool" "kube1nodepool" {
+resource "azurerm_kubernetes_cluster_node_pool" "kube1nodepoo2" {
 for_each               = azurerm_kubernetes_cluster.batchabcd
 name                   = "${each.key}"
 kubernetes_cluster_id  = each.value.id
