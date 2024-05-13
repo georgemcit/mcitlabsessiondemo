@@ -6,20 +6,20 @@ resource "azurerm_kubernetes_cluster" "georgeibrahimcluster" {
   name                = "georgeibrahimcluster"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
-  dns_prefix          = "ccrf2301"
+  dns_prefix          = var.dns_prefix
 
   default_node_pool {
-    name       = "default"
-    node_count = 1
-    vm_size    = "Standard_D2_v2"
+    name       = var.default_node_pool_name
+    node_count = var.default_node_pool_count
+    vm_size    = var.default_node_pool_vm_size 
   }
 
   identity {
-    type = "SystemAssigned"
+    type = var.identity
   }
 
   tags = {
-    Environment = "Production"
+    Environment = var.environment_tag
   }
 }
 resource "azurerm_kubernetes_cluster" "george" {
