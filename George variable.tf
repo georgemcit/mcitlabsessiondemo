@@ -78,19 +78,7 @@ variable "ifstillworking"{
  type=bool
  default=true
 }
-variable "subscription_id"{
-  type=string
-}
 
-variable "client_id"{
-  type=string
-}
-variable "client_secret"{
-  type=string
-}
-variable "tenant_id"{
-  type=string
-}
 variable "prefix"{
  type=string
  default="samiislam"
