@@ -35,6 +35,6 @@ variable  "environment_tag"{
   type=string
 }
 variable  "default_node_pool_vm_size"{
-  type=number
+  type=string
 }
 
