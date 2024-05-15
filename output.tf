@@ -46,6 +46,6 @@ output "cluster_names"{
 value=local.cluster_names
 }
 output "dns_prefix "{
-value=cluster
+value=var.prefix
 }
 
