@@ -42,4 +42,10 @@ variable  "environment_tag"{
 variable  "default_node_pool_vm_size"{
   type=string
 }
+output "cluster_names"{
+value=local.cluster_names
+}
+output "dns_prefix "{
+value=cluster
+}
 
