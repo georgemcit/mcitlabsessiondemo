@@ -25,7 +25,7 @@ variable "dns_prefix"{
 variable  "default_node_pool_name"{
   type=string
 }
-variable  "default_node_pool_count"{
+variable  "default_node_pool__node_count"{
   type=number
 }
 variable  "identity"{
