@@ -1,8 +1,4 @@
-resource "azurerm_resource_group" "azureresourcegroup" {
-  name     = "george_ibrahim_1980_01_05"
-  location = "Canada Central"
-}
-resource "azurerm_kubernetes_cluster" "batchabcd" {
+resource "azurerm_kubernetes_cluster" "george1" {
   for_each            = {for cluster in local.cluster_names: cluster=>cluster}
   name                = "${var.prefix}cluster"
   location            = azurerm_resource_group.azureresourcegroup.location
@@ -23,29 +19,3 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
     Environment = var.environment_tag
   }
 }
-
-variable "dns_prefix"{
-  type=string
-}
-variable  "default_node_pool_name"{
-  type=string
-}
-variable  "default_node_pool__node_count"{
-  type=number
-}
-variable  "identity"{
-  type=string
-}
-variable  "environment_tag"{
-  type=string
-}
-variable  "default_node_pool_vm_size"{
-  type=string
-}
-output "cluster_names"{
-value=local.cluster_names
-}
-output "name"{
-value=var.prefix
-}
-
