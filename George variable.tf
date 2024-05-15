@@ -1,3 +1,4 @@
+/*
 variable "original_string" {
   default = "DUBAI SYRIA ITALY FRANCE GERMANY"
 }
@@ -136,3 +137,4 @@ variable "favouritefood"{
 output "favouritefood"{
     value=[for favouritefood in var.favouritefood:favouritefood ]
 }
+*/
