@@ -45,7 +45,7 @@ variable  "default_node_pool_vm_size"{
 output "cluster_names"{
 value=local.cluster_names
 }
-output "dns_prefix "{
+output "name"{
 value=var.prefix
 }
 
