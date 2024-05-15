@@ -1,3 +1,4 @@
+/*
 resource "azurerm_kubernetes_cluster" "george1" {
   for_each            = {for cluster in local.cluster_names: cluster=>cluster}
   name                = "${var.prefix}cluster"
@@ -37,4 +38,4 @@ variable  "environment_tag"{
 variable  "default_node_pool_vm_size"{
   type=string
 }
-
+*/
