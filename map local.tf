@@ -1,3 +1,4 @@
+/*
 variable "user_roles" {
   type    = map(string)
   default = {
@@ -22,3 +23,4 @@ locals {
 output "user_roles_result" {
   value = local.user_role_lookup
 }
+*/
