@@ -19,6 +19,18 @@ resource "azurerm_kubernetes_cluster" "george" {
     Environment = var.environment_tag
   }
 }
+
+resource "azurerm_kubernetes_cluster_node_pool" "kube1nodepool" {
+ for_each               = azurerm_kubernetes_cluster.batchabcd
+ name                   = "${each.key}"
+ kubernetes_cluster_id  = each.value.id
+ vm_size                = var.default_node_pool_vm_size 
+ node_count             = var.default_node_pool__node_count
+
+  tags = {
+    Environment = var.environment_tag
+  }
+}
 variable "dns_prefix"{
   type=string
 }
