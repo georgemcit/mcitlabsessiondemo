@@ -28,7 +28,7 @@ variable  "default_node_pool_name"{
 variable  "default_node_pool_count"{
   type=number
 }
-variable  "identity1"{
+variable  "identity"{
   type=string
 }
 variable  "environment_tag"{
