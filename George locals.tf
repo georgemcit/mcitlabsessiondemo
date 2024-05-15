@@ -1,3 +1,4 @@
+/*
 locals{
   landmarks1="museum"
   landmarks2="Notre-Dame Basilica"
@@ -81,3 +82,4 @@ output "sumotest"{
 output "winter_sports_message" {
   value = local.winter_sports_message
 }
+*/
