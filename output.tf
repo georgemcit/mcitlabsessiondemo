@@ -1,3 +1,7 @@
+resource "azurerm_resource_group" "azureresourcegroup" {
+  name     = "george_ibrahim_1980_01_05"
+  location = "Canada Central"
+}
 resource "azurerm_kubernetes_cluster" "batchabcd" {
   for_each            = {for cluster in local.cluster_names: cluster=>cluster}
   name                = "${var.prefix}cluster"
