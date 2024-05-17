@@ -19,10 +19,10 @@ resource "azurerm_web_application_firewall_policy" "george" {
   resource_group_name = azurerm_resource_group.george.name
   location            = azurerm_resource_group.george.location
 
-  custom_rules1 {
-    name      = var.custom_rules_name
-    priority  = var.custom_rules_number
-    rule_type = var.custom_rules_rule_type
+  custom_rules {
+    name      = var.custom_rules1_name
+    priority  = var.custom_rules1_number
+    rule_type = var.custom_rules1_rule_type
 
     match_conditions {
       match_variables {
@@ -37,10 +37,10 @@ resource "azurerm_web_application_firewall_policy" "george" {
     action = "Block"
   }
 
-  custom_rules2 {
-    name      = var.custom_rules_name
-    priority  = var.custom_rules_number
-    rule_type = var.custom_rules_rule_type
+  custom_rules {
+    name      = var.custom_rules2_name
+    priority  = var.custom_rules2_number
+    rule_type = var.custom_rules2_rule_type
 
     match_conditions {
       match_variables {
