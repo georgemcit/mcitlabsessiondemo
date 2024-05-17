@@ -70,11 +70,11 @@ variable "custom_rules2_priority"{
   type=number
   default="2"
 }
-variable  "list_match_values"{
+variable  "list1_match_values"{
   type =list(string)
   default=["192.168.1.0/24", "10.0.0.0/24"]
 }
-variable  "list1_match_values"{
+variable  "list2_match_values"{
   type =list
   default=["192.168.1.0/24"]
 }
