@@ -70,7 +70,7 @@ variable "custom_rules2_priority"{
   type=number
   default="2"
 }
-variable  "environment_tag"{
-  type=string
-  default="Production"
+variable  "list_match_values"{
+  type =list(string)
+  default=["192.168.1.0/24", "10.0.0.0/24"]
 }
