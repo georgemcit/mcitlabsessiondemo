@@ -1,10 +1,12 @@
+
 #This is an Azure Montreal College Information Technology - Lab Session
+/*
 resource "azurerm_resource_group" "azureresourcegroup" {
   name     = "george_ibrahim_1980_01_05"
   location = "Canada Central"
 }
 
-/*
+
 resource "azurerm_storage_account" "azurermmcitcountexample" {
   count=5
   name                     = "${var.firstname}${var.lastname}storage${count.index}"
