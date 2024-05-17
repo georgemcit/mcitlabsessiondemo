@@ -20,9 +20,9 @@ resource "azurerm_web_application_firewall_policy" "george" {
   location            = azurerm_resource_group.george.location
 
   custom_rules {
-    name      = "Rule1"
-    priority  = 1
-    rule_type = "MatchRule"
+    name      = var.custom_rules1_name
+    priority  = var.custom_rules1_number
+    rule_type = var.custom_rules1_rule_type
 
     match_conditions {
       match_variables {
@@ -38,9 +38,9 @@ resource "azurerm_web_application_firewall_policy" "george" {
   }
 
   custom_rules {
-    name      = "Rule2"
-    priority  = 2
-    rule_type = "MatchRule"
+    name      = var.custom_rules2_name
+    priority  = var.custom_rules2_number
+    rule_type = var.custom_rules2_rule_type
 
     match_conditions {
       match_variables {
