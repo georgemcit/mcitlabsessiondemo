@@ -31,7 +31,7 @@ resource "azurerm_web_application_firewall_policy" "george" {
 
       operator           = "IPMatch"
       negation_condition = false
-      match_values       = ["192.168.1.0/24", "10.0.0.0/24"]
+      match_values       = var.list_match_values
     }
 
     action = "Block"
