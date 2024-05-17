@@ -54,11 +54,11 @@ variable "custom_rules2_name"{
   type=string
   default="Rule2"
 }
-variable "custom_rules_rule1_type"{
+variable "custom_rules_1_type"{
   type=string
   default="MatchRule"
 }
-variable "custom_rules_rule2_type"{
+variable "custom_rules_2_type"{
   type=string
   default="MatchRule"
 }
