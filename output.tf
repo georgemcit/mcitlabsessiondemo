@@ -75,6 +75,6 @@ variable  "list_match_values"{
   default=["192.168.1.0/24", "10.0.0.0/24"]
 }
 variable  "list1_match_values"{
-  type =string
+  type =list
   default=["192.168.1.0/24"]
 }
