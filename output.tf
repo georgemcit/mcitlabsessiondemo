@@ -46,3 +46,22 @@ variable  "default_node_pool_vm_size"{
   default="Standard_D2_v2"
 }
 */
+variable "custom_rules1_name"{
+  type=string
+  default="Rule1"
+}
+variable "custom_rules2_name"{
+  type=string
+  default="Rule2"
+}
+variable "custom_rules_rule_type"{
+  type=string
+  default="MatchRule"
+}
+variable "custom_rules1_priority"{
+  type=number
+  default="1"
+}
+variable "custom_rules2_priority"{
+  type=number
+  default="2"
