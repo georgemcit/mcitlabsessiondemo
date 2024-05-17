@@ -54,7 +54,11 @@ variable "custom_rules2_name"{
   type=string
   default="Rule2"
 }
-variable "custom_rules_rule_type"{
+variable "custom_rules_rule1_type"{
+  type=string
+  default="MatchRule"
+}
+variable "custom_rules_rule2_type"{
   type=string
   default="MatchRule"
 }
@@ -65,3 +69,4 @@ variable "custom_rules1_priority"{
 variable "custom_rules2_priority"{
   type=number
   default="2"
+}
