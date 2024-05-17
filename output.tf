@@ -70,3 +70,7 @@ variable "custom_rules2_priority"{
   type=number
   default="2"
 }
+variable  "environment_tag"{
+  type=string
+  default="Production"
+}
