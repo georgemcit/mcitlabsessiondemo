@@ -21,7 +21,7 @@ resource "azurerm_web_application_firewall_policy" "george" {
 
   custom_rules {
     name      = var.custom_rules1_name
-    priority  = var.custom_rules1_number
+    priority  = var.custom_rules1_priority
     rule_type = var.custom_rules1_rule_type
 
     match_conditions {
@@ -39,7 +39,7 @@ resource "azurerm_web_application_firewall_policy" "george" {
 
   custom_rules {
     name      = var.custom_rules2_name
-    priority  = var.custom_rules2_number
+    priority  = var.custom_rules2_priority
     rule_type = var.custom_rules2_rule_type
 
     match_conditions {
