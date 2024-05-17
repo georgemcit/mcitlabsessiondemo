@@ -45,7 +45,6 @@ variable  "default_node_pool_vm_size"{
   type=string
   default="Standard_D2_v2"
 }
-*/
 variable "custom_rules1_name"{
   type=string
   default="Rule1"
@@ -77,4 +76,30 @@ variable  "list1_match_values"{
 variable  "list2_match_values"{
   type =list
   default=["192.168.1.0/24"]
+}
+
+*/
+variable "custom_rules1_name"{
+  type=string
+}
+variable "custom_rules2_name"{
+  type=string
+}
+variable "custom_rules1_rule_type"{
+  type=string
+}
+variable "custom_rules2_rule_type"{
+  type=string
+}
+variable "custom_rules1_priority"{
+  type=number
+}
+variable "custom_rules2_priority"{
+  type=number
+}
+variable  "list1_match_values"{
+  type =list(string)
+}
+variable  "list2_match_values"{
+  type =list
 }
