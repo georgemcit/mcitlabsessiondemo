@@ -1,7 +1,7 @@
 #module for storage account
 resource "azurerm_resource_group" "georgerg" {
   name     = "george_ibrahim_1980_01_05"
-  location = "Canada Central"
+  location = "eastus"
 }
 variable "storage_account_name" {
   description = "The name of the storage account"
