@@ -1,3 +1,4 @@
+/*
 locals{
   waf_policy=[for f in fileset("${path.module}/waffolder", "[^_]*.yaml") : yamldecode(file("${path.module}/waffolder/${f}"))]
   azurewafpolicy_list = flatten([
@@ -106,3 +107,4 @@ resource "azurerm_web_application_firewall_policy" "george" {
     }
   }
 }
+*/
