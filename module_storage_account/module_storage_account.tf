@@ -42,6 +42,3 @@ output "storage_account_name" {
 output "storage_account_id" {
   value = azurerm_storage_account.storage_account.id
 }
-output "resource_group_name" {
-  value = azurerm_resource_group.azurerm_resource.name
-}
