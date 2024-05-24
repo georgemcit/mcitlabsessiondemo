@@ -15,8 +15,5 @@ output "storage_account_id" {
   value = module.storage_account.storage_account_id
 }
 output "resource_group_name" {
-  value = module.storage_account.storage_account_name
-}
-output "resource_group_name" {
   value = module.resource_group.azurerm_resource.name
 }
