@@ -7,30 +7,11 @@ resource "azurerm_resource_group" "test" {
   name     = "example-lb-${random_id.rg_name.hex}"
 }
 
-module "network" {
-  source                  = "Azure/network/azurerm"
-  version                 = "4.2.0"
-  resource_group_name     = azurerm_resource_group.test.name
-  address_space           = "10.0.0.0/16"
-  resource_group_location = var.location
-  subnet_prefixes         = ["10.0.1.0/24"]
-  vnet_name               = "accvnet1"
-  subnet_names            = ["subnet1"]
-
-  tags = {
-    environment = "dev"
-    costcenter  = "it"
-  }
-
-  depends_on = [azurerm_resource_group.test]
-}
-
 module "mylb" {
   source                                 = "../.."
   resource_group_name                    = azurerm_resource_group.test.name
   type                                   = "private"
-  frontend_vnet_name                     = "accvnet1"
-  frontend_subnet_name                   = "subnet1"
+  frontend_subnet_id                     = module.network.vnet_subnets[0]
   frontend_private_ip_address_allocation = "Static"
   frontend_private_ip_address            = "10.0.1.6"
   lb_sku                                 = "Standard"
@@ -58,5 +39,22 @@ module "mylb" {
     source      = "terraform"
   }
 
-  depends_on = [module.network]
+  depends_on = [azurerm_resource_group.test]
+}
+
+module "network" {
+  source                  = "Azure/network/azurerm"
+  version                 = "4.2.0"
+  resource_group_name     = azurerm_resource_group.test.name
+  address_space           = "10.0.0.0/16"
+  resource_group_location = var.location
+  subnet_prefixes         = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+  subnet_names            = ["subnet1", "subnet2", "subnet3"]
+
+  tags = {
+    environment = "dev"
+    costcenter  = "it"
+  }
+
+  depends_on = [azurerm_resource_group.test]
 }
