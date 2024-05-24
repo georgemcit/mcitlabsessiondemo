@@ -1,15 +1,3 @@
-# Azure load balancer module
-data "azurerm_resource_group" "azlb" {
-  name = var.resource_group_name
-}
-
-data "azurerm_subnet" "snet" {
-  count = (var.frontend_subnet_name != null && var.frontend_subnet_name != "") ? 1 : 0
-
-  name                 = var.frontend_subnet_name
-  resource_group_name  = data.azurerm_resource_group.azlb.name
-  virtual_network_name = var.frontend_vnet_name
-}
 
 locals {
   data_subnet_id = try(data.azurerm_subnet.snet[0].id, "")
