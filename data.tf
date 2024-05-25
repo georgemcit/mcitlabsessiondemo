@@ -1,4 +1,4 @@
-/*
+
 resource "random_id" "rg_name" {
   byte_length = 8
 }
@@ -63,7 +63,7 @@ variable "location"{
   type=string
   default="Canada Central"
 }
-*/
+/*
 data "azurerm_resource_group" "azlb" {
   name = var.resource_group_name
 }
@@ -195,3 +195,4 @@ variable "resource_group_name"{
   type=string
   default="georgeibrahim"
 }
+*/
