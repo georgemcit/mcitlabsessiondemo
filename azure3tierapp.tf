@@ -232,3 +232,9 @@ output "admin_password" {
   sensitive = true
   value = var.admin_password
 }
+variable "admin_username"{
+  type=string
+}
+variable "admin_password"{
+  type=string
+}
