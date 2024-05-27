@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "Mcitterraformrg"
-  location = "Canada Central"
+  name     = var.azurerm_resource_group_name
+  location = var.azurerm_resource_group_location
 }
 
 # Virtual Network
@@ -15,4 +15,10 @@ variable "virtual_network_name"{
 }
 variable  "address_space"{
   type =list
+}
+variable "azurerm_resource_group_name"{
+  type=string
+}
+variable "azurerm_resource_group_location"{
+  type=string
 }
