@@ -10,3 +10,9 @@ resource "azurerm_virtual_network" "vnet" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 }
+variable "virtual_network_name"{
+  type=string
+}
+variable  "address_space"{
+  type =list
+}
