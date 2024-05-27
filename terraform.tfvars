@@ -17,4 +17,4 @@ address_prefixes_web=["10.0.1.0/24"]
 azurerm_subnet_app_name="web-subnet"
 address_prefixes_app=["10.0.2.0/24"]
 azurerm_subnet_db_name="db-subnet""
-address_prefixes_db=["10.0.3.0/24"]
+address_prefixes_db= ["10.0.3.0/24"]
