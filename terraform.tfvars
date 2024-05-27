@@ -12,3 +12,7 @@ azurerm_resource_group_name="Mcitterraformrg"
 azurerm_resource_group_location="Canada Central"
 virtual_network_name="myVNet"
 address_space=["10.0.0.0/16"]
+azurerm_subnet_web_name="web-subnet"
+address_prefixes_web=["10.0.1.0/24"]
+azurerm_subnet_app_name="web-subnet"
+address_prefixes_app=["10.0.2.0/24"]
