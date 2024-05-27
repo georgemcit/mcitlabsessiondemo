@@ -1,3 +1,4 @@
+/*
 resource "azurerm_network_security_group" "web_nsg" {
   name                = var.azurerm_network_security_group_web_name
   location            = azurerm_resource_group.rg.location
@@ -24,3 +25,4 @@ variable "azurerm_network_security_group_app_name"{
 variable "azurerm_network_security_group_db_name"{
   type=string
 }
+*/
