@@ -132,8 +132,8 @@ resource "azurerm_linux_virtual_machine" "web_vm" {
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   size                = "Standard_B1s"
-  admin_username      = "adminuser"
-  admin_password      = "Password1234!"
+  admin_username      = var.admin_username
+  admin_password      = var.admin_password
   network_interface_ids = [
     azurerm_network_interface.web_nic.id,
   ]
@@ -166,8 +166,8 @@ resource "azurerm_linux_virtual_machine" "app_vm" {
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   size                = "Standard_B1s"
-  admin_username      = "adminuser"
-  admin_password      = "Password1234!"
+  admin_username      = var.admin_username
+  admin_password      = var.admin_password
   network_interface_ids = [
     azurerm_network_interface.app_nic.id,
   ]
@@ -223,4 +223,12 @@ resource "azurerm_mysql_database" "exampledb" {
 # Output the Public IP of the Web VM
 output "web_vm_public_ip" {
   value = azurerm_linux_virtual_machine.web_vm.public_ip_address
+}
+output "admin_username" {
+  sensitive = true
+  value = var.admin_username
+}
+output "admin_password" {
+  sensitive = true
+  value = var.admin_password
 }
