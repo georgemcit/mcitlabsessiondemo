@@ -78,7 +78,7 @@ variable  "list2_match_values"{
   default=["192.168.1.0/24"]
 }
 
-*/
+
 variable "custom_rules1_name"{
   type=string
 }
@@ -103,3 +103,4 @@ variable  "list1_match_values"{
 variable  "list2_match_values"{
   type =list
 }
+*/
