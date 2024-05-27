@@ -241,7 +241,7 @@ output "admin_password" {
 variable "administrator_login"{
   type=string
 }
-output "admin_username" {
+output "administrator_login" {
   sensitive = true
   value = var.administrator_login
 }
