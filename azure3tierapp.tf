@@ -1,3 +1,4 @@
+/*
 # Resource Group
 resource "azurerm_resource_group" "rg" {
   name     = "Mcitterraformrg"
@@ -252,3 +253,4 @@ output "administrator_login_password" {
   sensitive = true
   value = var.administrator_login_password
 }
+*/
