@@ -1,3 +1,4 @@
+/*
 resource "azurerm_subnet" "web" {
   name                 = var.azurerm_subnet_web_name
   resource_group_name  = azurerm_resource_group.rg.name
@@ -35,3 +36,4 @@ variable "azurerm_subnet_db_name"{
 variable "address_prefixes_db"{
   type =list
 }
+*/
