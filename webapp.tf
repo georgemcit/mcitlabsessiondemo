@@ -21,5 +21,5 @@ variable "azurerm_subnet_app_name"{
   type=string
 }
 variable "address_prefixes_app"{
-  type=string
+  type =list
 }
