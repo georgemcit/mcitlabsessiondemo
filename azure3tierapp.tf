@@ -199,8 +199,8 @@ resource "azurerm_mysql_server" "mysql" {
   name                = "mysqlserver"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  administrator_login = "mysqladmin"
-  administrator_login_password = "Password1234!"
+  administrator_login = var.administrator_login 
+  administrator_login_password = var.administrator_login_password
   sku_name            = "GP_Gen5_2"
   storage_mb          = 5120
   version             = "5.7"
@@ -224,6 +224,12 @@ resource "azurerm_mysql_database" "exampledb" {
 output "web_vm_public_ip" {
   value = azurerm_linux_virtual_machine.web_vm.public_ip_address
 }
+variable "admin_username"{
+  type=string
+}
+variable "admin_password"{
+  type=string
+}
 output "admin_username" {
   sensitive = true
   value = var.admin_username
@@ -232,9 +238,17 @@ output "admin_password" {
   sensitive = true
   value = var.admin_password
 }
-variable "admin_username"{
+variable "administrator_login"{
   type=string
 }
-variable "admin_password"{
+output "admin_username" {
+  sensitive = true
+  value = var.administrator_login
+}
+variable "administrator_login"{
   type=string
+}
+output "administrator_login_password" {
+  sensitive = true
+  value = var.administrator_login_password
 }
