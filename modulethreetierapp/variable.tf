@@ -27,3 +27,19 @@ variable "db_admin_password" {
   description = "The admin password for the database"
   type        = string
 }
+output "admin_username" {
+  sensitive = true
+  value = var.administrator_login
+}
+output "admin_password" {
+  sensitive = true
+  value = var.administrator_login_password
+}
+output "db_admin_username" {
+  sensitive = true
+  value = var.db_admin_username
+}
+output "db_admin_password" {
+  sensitive = true
+  value = var.db_admin_password
+}
