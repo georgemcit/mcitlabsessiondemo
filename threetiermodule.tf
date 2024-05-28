@@ -6,6 +6,8 @@ module "three_tier_app" {
   admin_password      = var.administrator_login_password
   db_admin_username   = var.db_admin_username
   db_admin_password   = var.db_admin_password
+  admin_username_vm   = var.admin_username_vm
+  admin_password_vm   = var.admin_password_vm
 }
 variable "administrator_login"{
   type=string
@@ -35,7 +37,6 @@ output "db_admin_password" {
   sensitive = true
   value = var.db_admin_password
 }
-/*
 variable "admin_password_vm"{
   type=string
 }
@@ -50,4 +51,4 @@ output "admin_username_vm" {
   sensitive = true
   value = var.admin_username_vm
 }
-*/
+
