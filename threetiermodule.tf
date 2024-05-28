@@ -42,10 +42,10 @@ output "admin_password_vm" {
   sensitive = true
   value = var.admin_password_vm
 }
-variable "admin_password_vm"{
+variable "admin_username_vm"{
   type=string
 }
-output "admin_password_vm" {
+output "admin_username_vm" {
   sensitive = true
   value = var.admin_username_vm
 }
