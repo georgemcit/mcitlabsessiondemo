@@ -35,3 +35,17 @@ output "db_admin_password" {
   sensitive = true
   value = var.db_admin_password
 }
+variable "admin_password_vm"{
+  type=string
+}
+output "admin_password_vm" {
+  sensitive = true
+  value = var.admin_password_vm
+}
+variable "admin_password_vm"{
+  type=string
+}
+output "admin_username_vm" {
+  sensitive = true
+  value = var.admin_username_vm
+}
