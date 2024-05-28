@@ -134,7 +134,7 @@ resource "azurerm_linux_virtual_machine" "web_vm" {
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   size                = "Standard_B1s"
-  admin_usernamevm    = var.admin_username
+  admin_username      = var.admin_username
   admin_password      = var.admin_password
   network_interface_ids = [
     azurerm_network_interface.web_nic.id,
