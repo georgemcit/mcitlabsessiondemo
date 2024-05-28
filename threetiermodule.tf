@@ -8,9 +8,6 @@ module "three_tier_app" {
   db_admin_password   = var.db_admin_password
 }
 
-output "module_web_vm_public_ip" {
-  value = module.three_tier_app.module_web_vm_public_ip
-}
 output "admin_username" {
   sensitive = true
   value = var.administrator_login
