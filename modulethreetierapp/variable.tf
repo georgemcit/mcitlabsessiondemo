@@ -27,7 +27,3 @@ variable "db_admin_password" {
   description = "The admin password for the database"
   type        = string
 }
-variable "admin_username_vm" {
-  description = "The admin username for the VMs"
-  type        = string
-}
