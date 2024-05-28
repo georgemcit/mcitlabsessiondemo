@@ -6,6 +6,8 @@ module "three_tier_app" {
   admin_password      = var.administrator_login_password
   db_admin_username   = var.db_admin_username
   db_admin_password   = var.db_admin_password
+  admin_username_vm   = var.admin_username_vm
+  admin_password _vm  = var. admin_username_vm
 }
 variable "administrator_login"{
   type=string
