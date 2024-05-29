@@ -69,11 +69,11 @@ variable "administrator_login"{
 variable "administrator_login_password"{
   type=string
 }
-output "admin_username" {
+output "administrator_login" {
   sensitive = true
   value = var.administrator_login
 }
-output "admin_password" {
+output "administrator_login_password" {
   sensitive = true
   value = var.administrator_login_password
 }
