@@ -73,7 +73,7 @@ output "administrator_login" {
   sensitive = true
   value = var.administrator_login
 }
-output "admin_password " {
+output "admin_password" {
   sensitive = true
   value = var.administrator_login_password
 }
