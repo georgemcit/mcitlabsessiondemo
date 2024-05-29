@@ -12,7 +12,7 @@ module "three_tier_app" {
 output "module_web_vm_public_ip" {
   value = module.three_tier_app.module_web_vm_public_ip
 }
-
+*/
 module "three_tier_app_count" {
   source              = "./modulethreetierapp_count/"
   resource_group_name = "mcitthreetiermodulecount"
@@ -27,4 +27,4 @@ module "three_tier_app_count" {
 output "module_web_vm_public_ip_count" {
   value = [for i in range(var.instance_count) : module.three_tier_app_count[i].module_web_vm_public_ip_count]
 }
-*/
+
