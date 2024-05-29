@@ -32,6 +32,12 @@ variable "instance_count" {
   type        = number
   default     = 1
 }
+variable "administrator_login"{
+  type=string
+}
+variable "administrator_login_password"{
+  type=string
+}
 variable "db_admin_username"{
   type=string
 }
