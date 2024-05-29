@@ -1,4 +1,4 @@
-
+/*
 resource "azurerm_resource_group" "georgeibrahim" {
   name     = "george_ibrahim_1980_01_05"
   location = "Canada Central"
@@ -77,3 +77,4 @@ output "admin_password" {
   sensitive = true
   value = var.administrator_login_password
 }
+*/
