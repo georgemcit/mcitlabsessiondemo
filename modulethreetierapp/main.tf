@@ -1,4 +1,4 @@
-
+/*
 # Resource Group
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
@@ -227,3 +227,4 @@ resource "azurerm_mysql_database" "exampledb" {
 output "web_vm_public_ip" {
   value = azurerm_linux_virtual_machine.web_vm.public_ip_address
 }
+*/
