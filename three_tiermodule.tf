@@ -27,4 +27,8 @@ module "three_tier_app_count" {
 output "module_web_vm_public_ip_count" {
   value = [for i in range(var.instance_count) : module.three_tier_app_count[i].module_web_vm_public_ip_count]
 }
-
+variable "instance_count" {
+  description = "Number of instances to create"
+  type        = number
+  default     = 1
+}
