@@ -66,7 +66,7 @@ output "vm_public_ips" {
 variable "admin_username"{
   type=string
 }
-variable "administrator_login_password"{
+variable "admin_password"{
   type=string
 }
 output "administrator_login" {
