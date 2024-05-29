@@ -63,13 +63,13 @@ resource "azurerm_linux_virtual_machine" "vm" {
 output "vm_public_ips" {
   value = azurerm_linux_virtual_machine.vm[*].public_ip_address
 }
-variable "admin_username"{
+variable "administrator_login"{
   type=string
 }
-variable "admin_password"{
+variable "administrator_login_password"{
   type=string
 }
-output "administrator_login" {
+output "admin_username" {
   sensitive = true
   value = var.administrator_login
 }
