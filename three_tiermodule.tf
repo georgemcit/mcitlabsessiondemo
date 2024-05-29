@@ -32,3 +32,25 @@ variable "instance_count" {
   type        = number
   default     = 1
 }
+variable "db_admin_username"{
+  type=string
+}
+variable "db_admin_password"{
+  type=string
+}
+output "admin_username" {
+  sensitive = true
+  value = var.administrator_login
+}
+output "admin_password" {
+  sensitive = true
+  value = var.administrator_login_password
+}
+output "db_admin_username" {
+  sensitive = true
+  value = var.db_admin_username
+}
+output "db_admin_password" {
+  sensitive = true
+  value = var.db_admin_password
+}
