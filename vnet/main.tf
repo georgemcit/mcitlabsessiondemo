@@ -4,15 +4,15 @@ resource "azurerm_resource_group" "georgeibrahim" {
 }
 
 resource "azurerm_virtual_network" "georgevn" {
-  name                = "george-network"
-  address_space       = ["10.0.0.0/16"]
+  name                = var.virtual_network_name
+  address_space       = var.address_space
   location            = azurerm_resource_group.georgeibrahim.location
   resource_group_name = azurerm_resource_group.georgeibrahim.name
 }
 
 resource "azurerm_subnet" "georgesb" {
-  name                 = "george_sb"
+  name                 = var.subnet_name
   resource_group_name  = azurerm_resource_group.georgeibrahim.name
   virtual_network_name = azurerm_virtual_network.georgevn.name
-  address_prefixes     = ["10.0.2.0/24"]
+  address_prefixes     = var.address_prefixes
 }
