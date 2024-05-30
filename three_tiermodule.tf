@@ -12,7 +12,7 @@ module "three_tier_app" {
 output "module_web_vm_public_ip" {
   value = module.three_tier_app.module_web_vm_public_ip
 }
-*/
+
 module "three_tier_app_count" {
   source              = "./modulethreetierapp_count/"
   resource_group_name = "mcitthreetiermodulecount"
@@ -60,3 +60,4 @@ output "db_admin_password" {
   sensitive = true
   value = var.db_admin_password
 }
+*/
