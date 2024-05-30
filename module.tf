@@ -1,5 +1,5 @@
-module "example" {
-  source              = "./examplemodule/"
+module "module_vnet" {
+  source              = "./vnet/"
   resource_group_name = local.resource_group_name
   location = local.location
   vnet_name = local.vnet_name
