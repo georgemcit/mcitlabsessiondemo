@@ -1,3 +1,4 @@
+/*
 # three tier count example
 
 
@@ -245,3 +246,4 @@ resource "azurerm_mysql_database" "exampledb" {
   charset             = "utf8"
   collation           = "utf8_general_ci"
 }
+*/
