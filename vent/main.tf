@@ -2,6 +2,7 @@ resource "azurerm_resource_group" "gi" {
   name     = "george-resources"
   location = "West Europe"
 }
+
 resource "azurerm_network_security_group" "nsg" {
   name                = "george-security-group"
   location            = azurerm_resource_group.example.location
