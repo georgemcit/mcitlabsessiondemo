@@ -1,4 +1,4 @@
-
+/*
 module "module_vnet" {
   source               = "./vnet/"
   resource_group_name  = "george_ibrahim"
@@ -9,4 +9,4 @@ module "module_vnet" {
   address_prefixes     = ["10.0.2.0/24"]
 
 }
-
+*/
