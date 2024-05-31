@@ -1,3 +1,4 @@
+/*
 locals{
   resource_group_name="georgeibrahim"
   location="Canada Central"
@@ -6,3 +7,4 @@ locals{
   subnet_name="georgesb"
   address_prefixes=["10.0.1.0/24"]
 }
+*/
