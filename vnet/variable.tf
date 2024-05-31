@@ -1,3 +1,4 @@
+/*
 variable "resource_group_name"{
   type=string
 }
@@ -16,3 +17,4 @@ variable "subnet_name"{
 variable "address_prefixes"{
   type=list(string)
 }
+*/
