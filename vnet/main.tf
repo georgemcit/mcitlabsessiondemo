@@ -1,3 +1,4 @@
+/*
 resource "azurerm_resource_group" "georgeibrahim" {
   name     = var.resource_group_name
   location = var.location
@@ -16,3 +17,4 @@ resource "azurerm_subnet" "georgesb" {
   virtual_network_name = azurerm_virtual_network.georgevn.name
   address_prefixes     = var.address_prefixes
 }
+*/
