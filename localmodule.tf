@@ -1,3 +1,4 @@
+/*
 module "module_vnet" {
   source              = "./vnet/"
   resource_group_name = local.resource_group_name
@@ -15,3 +16,4 @@ locals{
   subnet_name="georgesb"
   address_prefixes=["10.0.1.0/24"]
 }
+*/
